@@ -16,7 +16,7 @@ jobs:
       - run: git checkout master
       - run: git add .
       - run: git commit -m "Update From Circle CI"
-      - run: git push https://$GITHUB_LOGIN:$GITHUB_PASSWORD@github.com/$GITHUB_LOGIN/ghiblog.git
+      - run: git push https://$GITHUB_LOGIN:$GITHUB_PASSWORD@github.com/$GITHUB_LOGIN/blog.git
       - run: echo 'done'
 
 workflows:
