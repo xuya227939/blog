@@ -1,10 +1,13 @@
 
 # GitHub Issues Blog :tada::tada::tada:
     
-> :alarm_clock: 上次更新: 2019-06-28 00:01:49
+> :alarm_clock: 上次更新: 2019-06-29 00:01:10
     
-共 [8](https://github.com/xuya227939/blog/labels) 个标签, [51](https://github.com/xuya227939/blog/issues) 篇博文.
+共 [8](https://github.com/xuya227939/blog/labels) 个标签, [52](https://github.com/xuya227939/blog/issues) 篇博文.
 ## 最新 :new: 
+- [使用react.lazy打包之后得文件如何不显示数字](https://github.com/xuya227939/blog/issues/67) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-28 05:17:10</sub> 
+ :label: 	<sub>|</sub><sub>[question](https://github.com/xuya227939/blog/labels/question)	|	</sub>
+
 - [Charles如何扑获curl和Postman请求](https://github.com/xuya227939/blog/issues/66) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-24 14:44:56</sub> 
  :label: 	<sub>|</sub><sub>[question](https://github.com/xuya227939/blog/labels/question)	|	</sub>
 
@@ -16,9 +19,6 @@
 
 - [eslint for react](https://github.com/xuya227939/blog/issues/63) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-13 10:22:14</sub> 
  :label: 	<sub>|</sub><sub>[react](https://github.com/xuya227939/blog/labels/react)	|	</sub>
-
-- [使用Sourcetree 提示需要输入密码(mac)](https://github.com/xuya227939/blog/issues/62) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-10 03:30:47</sub> 
- :label: 	<sub>|</sub><sub>[question](https://github.com/xuya227939/blog/labels/question)	|	</sub>
 
 ## 分类  :card_file_box: 
 
@@ -67,8 +67,9 @@
 </details>
 
 <details>
-<summary>question	<sup>7:newspaper:</sup></summary>
+<summary>question	<sup>8:newspaper:</sup></summary>
 
+- [使用react.lazy打包之后得文件如何不显示数字](https://github.com/xuya227939/blog/issues/67)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-06-28 05:17:10</sub> 
 - [Charles如何扑获curl和Postman请求](https://github.com/xuya227939/blog/issues/66)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-06-24 14:44:56</sub> 
 - [使用Sourcetree 提示需要输入密码(mac)](https://github.com/xuya227939/blog/issues/62)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-06-10 03:30:47</sub> 
 - [ERR_SSL_PROTOCOL_ERROR](https://github.com/xuya227939/blog/issues/53)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-05-12 12:15:52</sub> 
