@@ -1,10 +1,13 @@
 
 # GitHub Issues Blog :tada::tada::tada:
     
-> :alarm_clock: 上次更新: 2019-07-08 07:43:18
+> :alarm_clock: 上次更新: 2019-07-09 00:00:34
     
-共 [8](https://github.com/xuya227939/blog/labels) 个标签, [52](https://github.com/xuya227939/blog/issues) 篇博文.
+共 [8](https://github.com/xuya227939/blog/labels) 个标签, [53](https://github.com/xuya227939/blog/issues) 篇博文.
 ## 最新 :new: 
+- [CircleCI自动化部署](https://github.com/xuya227939/blog/issues/68) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-07-08 13:13:56</sub> 
+ :label: 	<sub>|</sub>
+
 - [使用react.lazy打包之后得文件如何不显示数字](https://github.com/xuya227939/blog/issues/67) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-28 05:17:10</sub> 
  :label: 	<sub>|</sub><sub>[question](https://github.com/xuya227939/blog/labels/question)	|	</sub>
 
@@ -16,9 +19,6 @@
 
 - [Git工作流程](https://github.com/xuya227939/blog/issues/64) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-18 14:42:54</sub> 
  :label: 	<sub>|</sub><sub>[git](https://github.com/xuya227939/blog/labels/git)	|	</sub>
-
-- [eslint for react](https://github.com/xuya227939/blog/issues/63) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-13 10:22:14</sub> 
- :label: 	<sub>|</sub><sub>[react](https://github.com/xuya227939/blog/labels/react)	|	</sub>
 
 ## 分类  :card_file_box: 
 
