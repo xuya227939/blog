@@ -1,12 +1,12 @@
 
 # GitHub Issues Blog :tada::tada::tada:
     
-> :alarm_clock: 上次更新: 2019-07-09 00:00:34
+> :alarm_clock: 上次更新: 2019-07-10 00:01:07
     
 共 [8](https://github.com/xuya227939/blog/labels) 个标签, [53](https://github.com/xuya227939/blog/issues) 篇博文.
 ## 最新 :new: 
 - [CircleCI自动化部署](https://github.com/xuya227939/blog/issues/68) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-07-08 13:13:56</sub> 
- :label: 	<sub>|</sub>
+ :label: 	<sub>|</sub><sub>[technology](https://github.com/xuya227939/blog/labels/technology)	|	</sub>
 
 - [使用react.lazy打包之后得文件如何不显示数字](https://github.com/xuya227939/blog/issues/67) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-28 05:17:10</sub> 
  :label: 	<sub>|</sub><sub>[question](https://github.com/xuya227939/blog/labels/question)	|	</sub>
@@ -103,8 +103,9 @@
 </details>
 
 <details>
-<summary>technology	<sup>9:newspaper:</sup></summary>
+<summary>technology	<sup>10:newspaper:</sup></summary>
 
+- [CircleCI自动化部署](https://github.com/xuya227939/blog/issues/68)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-07-08 13:13:56</sub> 
 - [16进制和字符串互转](https://github.com/xuya227939/blog/issues/65)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-06-24 08:21:20</sub> 
 - [babel6升级7](https://github.com/xuya227939/blog/issues/60)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-06-05 05:25:00</sub> 
 - [weex封装dialog源码，支持自定义内容](https://github.com/xuya227939/blog/issues/45)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-03-09 00:41:04</sub> 
