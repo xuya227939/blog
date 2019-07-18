@@ -1,9 +1,9 @@
 
 # GitHub Issues Blog :tada::tada::tada:
     
-> :alarm_clock: 上次更新: 2019-07-17 00:01:32
+> :alarm_clock: 上次更新: 2019-07-18 00:01:47
     
-共 [8](https://github.com/xuya227939/blog/labels) 个标签, [53](https://github.com/xuya227939/blog/issues) 篇博文.
+共 [8](https://github.com/xuya227939/blog/labels) 个标签, [52](https://github.com/xuya227939/blog/issues) 篇博文.
 ## 最新 :new: 
 - [CircleCI自动化部署](https://github.com/xuya227939/blog/issues/68) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-07-08 13:13:56</sub> 
  :label: 	<sub>|</sub><sub>[technology](https://github.com/xuya227939/blog/labels/technology)	|	</sub>
@@ -17,7 +17,7 @@
 - [16进制和字符串互转](https://github.com/xuya227939/blog/issues/65) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-24 08:21:20</sub> 
  :label: 	<sub>|</sub><sub>[technology](https://github.com/xuya227939/blog/labels/technology)	|	</sub>
 
-- [Git工作流程](https://github.com/xuya227939/blog/issues/64) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-18 14:42:54</sub> 
+- [git flow工作流程](https://github.com/xuya227939/blog/issues/64) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-18 14:42:54</sub> 
  :label: 	<sub>|</sub><sub>[git](https://github.com/xuya227939/blog/labels/git)	|	</sub>
 
 ## 分类  :card_file_box: 
@@ -42,7 +42,7 @@
 <details>
 <summary>git	<sup>3:newspaper:</sup></summary>
 
-- [Git工作流程](https://github.com/xuya227939/blog/issues/64)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-06-18 14:42:54</sub> 
+- [git flow工作流程](https://github.com/xuya227939/blog/issues/64)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-06-18 14:42:54</sub> 
 - [Git常用命令](https://github.com/xuya227939/blog/issues/36)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2018-11-04 09:34:11</sub> 
 - [github本地配置和全局配置](https://github.com/xuya227939/blog/issues/35)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2018-10-25 08:43:53</sub> 
 
@@ -50,12 +50,11 @@
 </details>
 
 <details>
-<summary>js	<sup>10:newspaper:</sup></summary>
+<summary>js	<sup>9:newspaper:</sup></summary>
 
 - [js实现deepCopy](https://github.com/xuya227939/blog/issues/46)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-03-12 02:18:02</sub> 
 - [精通Js(持续更新)](https://github.com/xuya227939/blog/issues/40)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2018-12-21 03:26:56</sub> 
 - [javascript 运行机制类文章](https://github.com/xuya227939/blog/issues/33)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2018-09-29 06:51:02</sub> 
-- [es6知识点](https://github.com/xuya227939/blog/issues/28)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2018-08-30 12:12:45</sub> 
 - [JS垃圾回收机制](https://github.com/xuya227939/blog/issues/22)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2018-07-23 07:30:03</sub> 
 - [Js实现队列](https://github.com/xuya227939/blog/issues/20)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2018-07-19 02:08:43</sub> 
 - [Js实现出入栈操作](https://github.com/xuya227939/blog/issues/18)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2018-07-18 01:22:58</sub> 
