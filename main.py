@@ -24,7 +24,8 @@ def sup(text: str):
 
 
 def sub(text: str):
-    return '<sub>%s</sub>' % text
+    return text
+    # return '<sub>%s</sub>' % text
 
 
 def update_readme_md_file(contents):
