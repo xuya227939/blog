@@ -15,7 +15,9 @@ cur_time: str
 
 
 def format_issue(issue: Issue):
-    return '- [%s](%s) \t %s \n' % (
+    # return '- [%s](%s) \t %s \n' % (
+    #     issue.title, issue.html_url, sub(issue.created_at))
+    return '- [%s](%s) \t\t\t %s \n\n' % (
         issue.title, issue.html_url, sub(issue.created_at))
 
 
