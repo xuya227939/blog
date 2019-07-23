@@ -1,7 +1,7 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2019-07-23 08:39:22
+> 上次更新: 2019-07-23 08:48:29
     
 共 [8](https://github.com/xuya227939/blog/labels) 个标签, [53](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
@@ -15,43 +15,18 @@
 
 - [16进制和字符串互转](https://github.com/xuya227939/blog/issues/65) 			 2019-06-24 08:21:20 
 
-## 分类 
-
-<details>
-<summary>bug	<sup>0</sup></summary>
-
-
-
-</details>
-
-<details>
-<summary>css	<sup>3</sup></summary>
-
+## 所有 
 - [垂直居中](https://github.com/xuya227939/blog/issues/32) 			 2018-09-27 11:14:57 
 
 - [水平居中](https://github.com/xuya227939/blog/issues/31) 			 2018-09-27 11:14:10 
 
 - [CSS盒模型](https://github.com/xuya227939/blog/issues/21) 			 2018-07-23 07:20:49 
 
-
-
-</details>
-
-<details>
-<summary>git	<sup>3</sup></summary>
-
 - [git flow工作流程](https://github.com/xuya227939/blog/issues/64) 			 2019-06-18 14:42:54 
 
 - [Git常用命令](https://github.com/xuya227939/blog/issues/36) 			 2018-11-04 09:34:11 
 
 - [github本地配置和全局配置](https://github.com/xuya227939/blog/issues/35) 			 2018-10-25 08:43:53 
-
-
-
-</details>
-
-<details>
-<summary>js	<sup>10</sup></summary>
 
 - [JavaScript语法规范](https://github.com/xuya227939/blog/issues/69) 			 2019-07-23 02:59:08 
 
@@ -73,13 +48,6 @@
 
 - [Js实现斐波那契数列](https://github.com/xuya227939/blog/issues/15) 			 2018-07-16 03:05:07 
 
-
-
-</details>
-
-<details>
-<summary>question	<sup>8</sup></summary>
-
 - [使用react.lazy打包之后得文件如何不显示数字](https://github.com/xuya227939/blog/issues/67) 			 2019-06-28 05:17:10 
 
 - [Charles如何扑获curl和Postman请求](https://github.com/xuya227939/blog/issues/66) 			 2019-06-24 14:44:56 
@@ -95,13 +63,6 @@
 - [Could not execute GraphicsMagick/ImageMagick](https://github.com/xuya227939/blog/issues/14) 			 2018-06-27 01:35:12 
 
 - [Nginx&node.js&express配置https](https://github.com/xuya227939/blog/issues/12) 			 2018-06-25 09:19:07 
-
-
-
-</details>
-
-<details>
-<summary>react	<sup>14</sup></summary>
 
 - [eslint for react](https://github.com/xuya227939/blog/issues/63) 			 2019-06-13 10:22:14 
 
@@ -131,13 +92,6 @@
 
 - [React全家桶建站教程-必看](https://github.com/xuya227939/blog/issues/1) 			 2018-06-07 02:32:34 
 
-
-
-</details>
-
-<details>
-<summary>technology	<sup>10</sup></summary>
-
 - [CircleCI自动化部署](https://github.com/xuya227939/blog/issues/68) 			 2019-07-08 13:13:56 
 
 - [16进制和字符串互转](https://github.com/xuya227939/blog/issues/65) 			 2019-06-24 08:21:20 
@@ -158,15 +112,5 @@
 
 - [网站性能优化几个点](https://github.com/xuya227939/blog/issues/27) 			 2018-08-16 02:18:12 
 
-
-
-</details>
-
-<details>
-<summary>vscode	<sup>1</sup></summary>
-
 - [vscode 自定义配置sublime主题色](https://github.com/xuya227939/blog/issues/52) 			 2019-05-07 02:31:15 
 
-
-
-</details>
