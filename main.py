@@ -158,6 +158,7 @@ def execute():
     list_by_labels_section = bundle_list_by_labels_section()
     print(list_by_labels_section)
 
+    # 6. test
     contents = [summary_section, new_created_section, list_by_labels_section]
     update_readme_md_file(contents)
 
