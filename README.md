@@ -1,7 +1,7 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2019-07-23 08:29:42
+> 上次更新: 2019-07-23 08:39:22
     
 共 [8](https://github.com/xuya227939/blog/labels) 个标签, [53](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
@@ -27,9 +27,12 @@
 <details>
 <summary>css	<sup>3</sup></summary>
 
-- [垂直居中](https://github.com/xuya227939/blog/issues/32) 	 2018-09-27 11:14:57 
-- [水平居中](https://github.com/xuya227939/blog/issues/31) 	 2018-09-27 11:14:10 
-- [CSS盒模型](https://github.com/xuya227939/blog/issues/21) 	 2018-07-23 07:20:49 
+- [垂直居中](https://github.com/xuya227939/blog/issues/32) 			 2018-09-27 11:14:57 
+
+- [水平居中](https://github.com/xuya227939/blog/issues/31) 			 2018-09-27 11:14:10 
+
+- [CSS盒模型](https://github.com/xuya227939/blog/issues/21) 			 2018-07-23 07:20:49 
+
 
 
 </details>
@@ -37,9 +40,12 @@
 <details>
 <summary>git	<sup>3</sup></summary>
 
-- [git flow工作流程](https://github.com/xuya227939/blog/issues/64) 	 2019-06-18 14:42:54 
-- [Git常用命令](https://github.com/xuya227939/blog/issues/36) 	 2018-11-04 09:34:11 
-- [github本地配置和全局配置](https://github.com/xuya227939/blog/issues/35) 	 2018-10-25 08:43:53 
+- [git flow工作流程](https://github.com/xuya227939/blog/issues/64) 			 2019-06-18 14:42:54 
+
+- [Git常用命令](https://github.com/xuya227939/blog/issues/36) 			 2018-11-04 09:34:11 
+
+- [github本地配置和全局配置](https://github.com/xuya227939/blog/issues/35) 			 2018-10-25 08:43:53 
+
 
 
 </details>
@@ -47,16 +53,26 @@
 <details>
 <summary>js	<sup>10</sup></summary>
 
-- [JavaScript语法规范](https://github.com/xuya227939/blog/issues/69) 	 2019-07-23 02:59:08 
-- [js实现deepCopy](https://github.com/xuya227939/blog/issues/46) 	 2019-03-12 02:18:02 
-- [精通Js(持续更新)](https://github.com/xuya227939/blog/issues/40) 	 2018-12-21 03:26:56 
-- [javascript 运行机制类文章](https://github.com/xuya227939/blog/issues/33) 	 2018-09-29 06:51:02 
-- [JS垃圾回收机制](https://github.com/xuya227939/blog/issues/22) 	 2018-07-23 07:30:03 
-- [Js实现队列](https://github.com/xuya227939/blog/issues/20) 	 2018-07-19 02:08:43 
-- [Js实现出入栈操作](https://github.com/xuya227939/blog/issues/18) 	 2018-07-18 01:22:58 
-- [Js实现列表操作](https://github.com/xuya227939/blog/issues/17) 	 2018-07-17 08:54:16 
-- [Js实现各种排序](https://github.com/xuya227939/blog/issues/16) 	 2018-07-16 03:23:52 
-- [Js实现斐波那契数列](https://github.com/xuya227939/blog/issues/15) 	 2018-07-16 03:05:07 
+- [JavaScript语法规范](https://github.com/xuya227939/blog/issues/69) 			 2019-07-23 02:59:08 
+
+- [js实现deepCopy](https://github.com/xuya227939/blog/issues/46) 			 2019-03-12 02:18:02 
+
+- [精通Js(持续更新)](https://github.com/xuya227939/blog/issues/40) 			 2018-12-21 03:26:56 
+
+- [javascript 运行机制类文章](https://github.com/xuya227939/blog/issues/33) 			 2018-09-29 06:51:02 
+
+- [JS垃圾回收机制](https://github.com/xuya227939/blog/issues/22) 			 2018-07-23 07:30:03 
+
+- [Js实现队列](https://github.com/xuya227939/blog/issues/20) 			 2018-07-19 02:08:43 
+
+- [Js实现出入栈操作](https://github.com/xuya227939/blog/issues/18) 			 2018-07-18 01:22:58 
+
+- [Js实现列表操作](https://github.com/xuya227939/blog/issues/17) 			 2018-07-17 08:54:16 
+
+- [Js实现各种排序](https://github.com/xuya227939/blog/issues/16) 			 2018-07-16 03:23:52 
+
+- [Js实现斐波那契数列](https://github.com/xuya227939/blog/issues/15) 			 2018-07-16 03:05:07 
+
 
 
 </details>
@@ -64,14 +80,22 @@
 <details>
 <summary>question	<sup>8</sup></summary>
 
-- [使用react.lazy打包之后得文件如何不显示数字](https://github.com/xuya227939/blog/issues/67) 	 2019-06-28 05:17:10 
-- [Charles如何扑获curl和Postman请求](https://github.com/xuya227939/blog/issues/66) 	 2019-06-24 14:44:56 
-- [使用Sourcetree 提示需要输入密码(mac)](https://github.com/xuya227939/blog/issues/62) 	 2019-06-10 03:30:47 
-- [ERR_SSL_PROTOCOL_ERROR](https://github.com/xuya227939/blog/issues/53) 	 2019-05-12 12:15:52 
-- [PhantomJS not found on PATH](https://github.com/xuya227939/blog/issues/51) 	 2019-05-06 08:02:32 
-- [阿里云oss如何通过node.js上传图片](https://github.com/xuya227939/blog/issues/49) 	 2019-03-29 03:45:46 
-- [Could not execute GraphicsMagick/ImageMagick](https://github.com/xuya227939/blog/issues/14) 	 2018-06-27 01:35:12 
-- [Nginx&node.js&express配置https](https://github.com/xuya227939/blog/issues/12) 	 2018-06-25 09:19:07 
+- [使用react.lazy打包之后得文件如何不显示数字](https://github.com/xuya227939/blog/issues/67) 			 2019-06-28 05:17:10 
+
+- [Charles如何扑获curl和Postman请求](https://github.com/xuya227939/blog/issues/66) 			 2019-06-24 14:44:56 
+
+- [使用Sourcetree 提示需要输入密码(mac)](https://github.com/xuya227939/blog/issues/62) 			 2019-06-10 03:30:47 
+
+- [ERR_SSL_PROTOCOL_ERROR](https://github.com/xuya227939/blog/issues/53) 			 2019-05-12 12:15:52 
+
+- [PhantomJS not found on PATH](https://github.com/xuya227939/blog/issues/51) 			 2019-05-06 08:02:32 
+
+- [阿里云oss如何通过node.js上传图片](https://github.com/xuya227939/blog/issues/49) 			 2019-03-29 03:45:46 
+
+- [Could not execute GraphicsMagick/ImageMagick](https://github.com/xuya227939/blog/issues/14) 			 2018-06-27 01:35:12 
+
+- [Nginx&node.js&express配置https](https://github.com/xuya227939/blog/issues/12) 			 2018-06-25 09:19:07 
+
 
 
 </details>
@@ -79,20 +103,34 @@
 <details>
 <summary>react	<sup>14</sup></summary>
 
-- [eslint for react](https://github.com/xuya227939/blog/issues/63) 	 2019-06-13 10:22:14 
-- [一款基于react开源的ui库（仅供参考，莫用与生产。）](https://github.com/xuya227939/blog/issues/48) 	 2019-03-26 08:12:24 
-- [前端技术架构选型](https://github.com/xuya227939/blog/issues/37) 	 2018-11-20 09:46:12 
-- [React原理](https://github.com/xuya227939/blog/issues/26) 	 2018-07-31 06:26:38 
-- [Redux原理](https://github.com/xuya227939/blog/issues/25) 	 2018-07-30 03:24:30 
-- [React如何进行上传图片](https://github.com/xuya227939/blog/issues/11) 	 2018-06-15 08:16:03 
-- [React全家桶建站教程-发布](https://github.com/xuya227939/blog/issues/10) 	 2018-06-08 02:21:42 
-- [React全家桶建站教程-Redux&Saga](https://github.com/xuya227939/blog/issues/7) 	 2018-06-08 02:16:34 
-- [React全家桶建站教程-Router](https://github.com/xuya227939/blog/issues/6) 	 2018-06-08 02:16:04 
-- [React全家桶建站教程-Webpack](https://github.com/xuya227939/blog/issues/5) 	 2018-06-08 01:47:55 
-- [React全家桶建站教程-React&Ant](https://github.com/xuya227939/blog/issues/4) 	 2018-06-08 00:57:25 
-- [React全家桶建站教程-Nginx](https://github.com/xuya227939/blog/issues/3) 	 2018-06-07 05:41:45 
-- [React全家桶建站教程-Express](https://github.com/xuya227939/blog/issues/2) 	 2018-06-07 03:37:22 
-- [React全家桶建站教程-必看](https://github.com/xuya227939/blog/issues/1) 	 2018-06-07 02:32:34 
+- [eslint for react](https://github.com/xuya227939/blog/issues/63) 			 2019-06-13 10:22:14 
+
+- [一款基于react开源的ui库（仅供参考，莫用与生产。）](https://github.com/xuya227939/blog/issues/48) 			 2019-03-26 08:12:24 
+
+- [前端技术架构选型](https://github.com/xuya227939/blog/issues/37) 			 2018-11-20 09:46:12 
+
+- [React原理](https://github.com/xuya227939/blog/issues/26) 			 2018-07-31 06:26:38 
+
+- [Redux原理](https://github.com/xuya227939/blog/issues/25) 			 2018-07-30 03:24:30 
+
+- [React如何进行上传图片](https://github.com/xuya227939/blog/issues/11) 			 2018-06-15 08:16:03 
+
+- [React全家桶建站教程-发布](https://github.com/xuya227939/blog/issues/10) 			 2018-06-08 02:21:42 
+
+- [React全家桶建站教程-Redux&Saga](https://github.com/xuya227939/blog/issues/7) 			 2018-06-08 02:16:34 
+
+- [React全家桶建站教程-Router](https://github.com/xuya227939/blog/issues/6) 			 2018-06-08 02:16:04 
+
+- [React全家桶建站教程-Webpack](https://github.com/xuya227939/blog/issues/5) 			 2018-06-08 01:47:55 
+
+- [React全家桶建站教程-React&Ant](https://github.com/xuya227939/blog/issues/4) 			 2018-06-08 00:57:25 
+
+- [React全家桶建站教程-Nginx](https://github.com/xuya227939/blog/issues/3) 			 2018-06-07 05:41:45 
+
+- [React全家桶建站教程-Express](https://github.com/xuya227939/blog/issues/2) 			 2018-06-07 03:37:22 
+
+- [React全家桶建站教程-必看](https://github.com/xuya227939/blog/issues/1) 			 2018-06-07 02:32:34 
+
 
 
 </details>
@@ -100,16 +138,26 @@
 <details>
 <summary>technology	<sup>10</sup></summary>
 
-- [CircleCI自动化部署](https://github.com/xuya227939/blog/issues/68) 	 2019-07-08 13:13:56 
-- [16进制和字符串互转](https://github.com/xuya227939/blog/issues/65) 	 2019-06-24 08:21:20 
-- [babel6升级7](https://github.com/xuya227939/blog/issues/60) 	 2019-06-05 05:25:00 
-- [weex封装dialog源码，支持自定义内容](https://github.com/xuya227939/blog/issues/45) 	 2019-03-09 00:41:04 
-- [ant-design表格列拖拽，部分源码](https://github.com/xuya227939/blog/issues/44) 	 2019-01-09 14:50:08 
-- [前端如何支持pdf、excel、word在线预览](https://github.com/xuya227939/blog/issues/42) 	 2018-12-27 07:54:14 
-- [图片和文件预览组件(部分源码)，可拖动，缩小，放大。](https://github.com/xuya227939/blog/issues/41) 	 2018-12-26 07:05:59 
-- [修改滚动条样式](https://github.com/xuya227939/blog/issues/30) 	 2018-09-20 12:02:42 
-- [跨域](https://github.com/xuya227939/blog/issues/29) 	 2018-09-17 13:52:56 
-- [网站性能优化几个点](https://github.com/xuya227939/blog/issues/27) 	 2018-08-16 02:18:12 
+- [CircleCI自动化部署](https://github.com/xuya227939/blog/issues/68) 			 2019-07-08 13:13:56 
+
+- [16进制和字符串互转](https://github.com/xuya227939/blog/issues/65) 			 2019-06-24 08:21:20 
+
+- [babel6升级7](https://github.com/xuya227939/blog/issues/60) 			 2019-06-05 05:25:00 
+
+- [weex封装dialog源码，支持自定义内容](https://github.com/xuya227939/blog/issues/45) 			 2019-03-09 00:41:04 
+
+- [ant-design表格列拖拽，部分源码](https://github.com/xuya227939/blog/issues/44) 			 2019-01-09 14:50:08 
+
+- [前端如何支持pdf、excel、word在线预览](https://github.com/xuya227939/blog/issues/42) 			 2018-12-27 07:54:14 
+
+- [图片和文件预览组件(部分源码)，可拖动，缩小，放大。](https://github.com/xuya227939/blog/issues/41) 			 2018-12-26 07:05:59 
+
+- [修改滚动条样式](https://github.com/xuya227939/blog/issues/30) 			 2018-09-20 12:02:42 
+
+- [跨域](https://github.com/xuya227939/blog/issues/29) 			 2018-09-17 13:52:56 
+
+- [网站性能优化几个点](https://github.com/xuya227939/blog/issues/27) 			 2018-08-16 02:18:12 
+
 
 
 </details>
@@ -117,7 +165,8 @@
 <details>
 <summary>vscode	<sup>1</sup></summary>
 
-- [vscode 自定义配置sublime主题色](https://github.com/xuya227939/blog/issues/52) 	 2019-05-07 02:31:15 
+- [vscode 自定义配置sublime主题色](https://github.com/xuya227939/blog/issues/52) 			 2019-05-07 02:31:15 
+
 
 
 </details>
