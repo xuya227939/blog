@@ -57,9 +57,9 @@ def bundle_summary_section():
     issues_html_url = 'https://github.com/%s/blog/issues' % user.get_user().login
 
     summary_section = '''
-# GitHub Issues Blog :tada::tada::tada:
+# GitHub Issues Blog
     
-> :alarm_clock: 上次更新: %s
+> 上次更新: %s
     
 共 [%s](%s) 个标签, [%s](%s) 篇博文.
 ''' % (cur_time, total_label_count, labels_html_url, total_issue_count, issues_html_url)
@@ -86,6 +86,15 @@ def format_issue_with_labels(issue: Issue):
 
     labels = issue.get_labels()
     labels_str = ''
+    # if labels:
+    #     labels_str = '\n :label: \t' + sub('|')
+
+    # for label in labels:
+    #     labels_str += sub('[%s](https://github.com/%s/blog/labels/%s)\t|\t' % (
+    #         label.name, user.get_user().login, urllib.parse.quote(label.name)))
+
+    # return '- [%s](%s) %s  \t\t\t :alarm_clock:%s %s\n\n' % (
+    #     issue.title, issue.html_url, sup('%s :speech_balloon:' % issue.comments), sub(issue.created_at), labels_str)
     if labels:
         labels_str = '\n :label: \t' + sub('|')
 
@@ -94,7 +103,7 @@ def format_issue_with_labels(issue: Issue):
             label.name, user.get_user().login, urllib.parse.quote(label.name)))
 
     return '- [%s](%s) %s  \t\t\t :alarm_clock:%s %s\n\n' % (
-        issue.title, issue.html_url, sup('%s :speech_balloon:' % issue.comments), sub(issue.created_at), labels_str)
+        issue.title, issue.html_url, sub(issue.created_at))
 
 
 def bundle_new_created_section():
@@ -102,7 +111,7 @@ def bundle_new_created_section():
 
     new_5_created_issues = blog.get_issues()[:5]
 
-    new_created_section = '## 最新 :new: \n'
+    new_created_section = '## 最新 \n'
 
     for issue in new_5_created_issues:
         new_created_section += format_issue_with_labels(issue)
@@ -114,7 +123,7 @@ def bundle_list_by_labels_section():
     global blog
     global user
 
-    list_by_labels_section = '## 分类  :card_file_box: \n'
+    list_by_labels_section = '## 分类 \n'
 
     all_labels = blog.get_labels()
 
