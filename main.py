@@ -86,15 +86,6 @@ def format_issue_with_labels(issue: Issue):
 
     labels = issue.get_labels()
     labels_str = ''
-    # if labels:
-    #     labels_str = '\n :label: \t' + sub('|')
-
-    # for label in labels:
-    #     labels_str += sub('[%s](https://github.com/%s/blog/labels/%s)\t|\t' % (
-    #         label.name, user.get_user().login, urllib.parse.quote(label.name)))
-
-    # return '- [%s](%s) %s  \t\t\t :alarm_clock:%s %s\n\n' % (
-    #     issue.title, issue.html_url, sup('%s :speech_balloon:' % issue.comments), sub(issue.created_at), labels_str)
     if labels:
         labels_str = '\n :label: \t' + sub('|')
 
@@ -103,7 +94,16 @@ def format_issue_with_labels(issue: Issue):
             label.name, user.get_user().login, urllib.parse.quote(label.name)))
 
     return '- [%s](%s) %s  \t\t\t :alarm_clock:%s %s\n\n' % (
-        issue.title, issue.html_url, sub(issue.created_at))
+        issue.title, issue.html_url, sup('%s :speech_balloon:' % issue.comments), sub(issue.created_at), labels_str)
+    # if labels:
+    #     labels_str = '\n :label: \t' + sub('|')
+
+    # for label in labels:
+    #     labels_str += sub('[%s](https://github.com/%s/blog/labels/%s)\t|\t' % (
+    #         label.name, user.get_user().login, urllib.parse.quote(label.name)))
+
+    # return '- [%s](%s) %s  \t\t\t :alarm_clock:%s %s\n\n' % (
+    #     issue.title, issue.html_url, sub(issue.created_at))
 
 
 def bundle_new_created_section():
