@@ -15,8 +15,8 @@ cur_time: str
 
 
 def format_issue(issue: Issue):
-    return (
-        issue.title, issue.html_url, sub(issue.created_at))
+    return '- [%s](%s)  %s  \t %s \n' % (
+        issue.title, issue.html_url, sup('%s :speech_balloon:' % issue.comments), sub(issue.created_at))
 
 
 def sup(text: str):
