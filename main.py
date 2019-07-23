@@ -94,7 +94,7 @@ def format_issue_with_labels(issue: Issue):
             label.name, user.get_user().login, urllib.parse.quote(label.name)))
 
     return '- [%s](%s) %s  \t\t\t %s %s\n\n' % (
-        issue.title, issue.html_url, sup('%s :speech_balloon:' % issue.comments), sub(issue.created_at), labels_str)
+        issue.title, issue.html_url, sub(issue.created_at), labels_str)
     # if labels:
     #     labels_str = '\n :label: \t' + sub('|')
 
