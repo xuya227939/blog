@@ -94,8 +94,8 @@ def format_issue_with_labels(issue: Issue):
         labels_str += sub('[%s](https://github.com/%s/blog/labels/%s)\t|\t' % (
             label.name, user.get_user().login, urllib.parse.quote(label.name)))
 
-    return '- [%s](%s) \t\t\t %s %s\n\n' % (
-        issue.title, issue.html_url, sub(issue.created_at), labels_str)
+    return '- [%s](%s) \t\t\t %s ' % (
+        issue.title, issue.html_url, sub(issue.created_at))
     # if labels:
     #     labels_str = '\n :label: \t' + sub('|')
 
