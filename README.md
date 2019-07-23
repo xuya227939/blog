@@ -1,10 +1,13 @@
 
-# GitHub Issues Blog :tada::tada::tada:
+# GitHub Issues Blog
     
-> :alarm_clock: 上次更新: 2019-07-23 00:01:41
+> 上次更新: 2019-07-23 06:36:16
     
-共 [8](https://github.com/xuya227939/blog/labels) 个标签, [52](https://github.com/xuya227939/blog/issues) 篇博文.
-## 最新 :new: 
+共 [8](https://github.com/xuya227939/blog/labels) 个标签, [53](https://github.com/xuya227939/blog/issues) 篇博文.
+## 最新 
+- [JavaScript语法规范](https://github.com/xuya227939/blog/issues/69) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-07-23 02:59:08</sub> 
+ :label: 	<sub>|</sub><sub>[js](https://github.com/xuya227939/blog/labels/js)	|	</sub>
+
 - [CircleCI自动化部署](https://github.com/xuya227939/blog/issues/68) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-07-08 13:13:56</sub> 
  :label: 	<sub>|</sub><sub>[technology](https://github.com/xuya227939/blog/labels/technology)	|	</sub>
 
@@ -17,10 +20,7 @@
 - [16进制和字符串互转](https://github.com/xuya227939/blog/issues/65) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-24 08:21:20</sub> 
  :label: 	<sub>|</sub><sub>[technology](https://github.com/xuya227939/blog/labels/technology)	|	</sub>
 
-- [git flow工作流程](https://github.com/xuya227939/blog/issues/64) <sup>0 :speech_balloon:</sup>  			 :alarm_clock:<sub>2019-06-18 14:42:54</sub> 
- :label: 	<sub>|</sub><sub>[git](https://github.com/xuya227939/blog/labels/git)	|	</sub>
-
-## 分类  :card_file_box: 
+## 分类 
 
 <details>
 <summary>bug	<sup>0:newspaper:</sup></summary>
@@ -50,8 +50,9 @@
 </details>
 
 <details>
-<summary>js	<sup>9:newspaper:</sup></summary>
+<summary>js	<sup>10:newspaper:</sup></summary>
 
+- [JavaScript语法规范](https://github.com/xuya227939/blog/issues/69)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-07-23 02:59:08</sub> 
 - [js实现deepCopy](https://github.com/xuya227939/blog/issues/46)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2019-03-12 02:18:02</sub> 
 - [精通Js(持续更新)](https://github.com/xuya227939/blog/issues/40)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2018-12-21 03:26:56</sub> 
 - [javascript 运行机制类文章](https://github.com/xuya227939/blog/issues/33)  <sup>0 :speech_balloon:</sup>  	 :alarm_clock:<sub>2018-09-29 06:51:02</sub> 
