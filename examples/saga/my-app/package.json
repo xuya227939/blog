@@ -15,7 +15,7 @@
     "npm": "^5.8.0",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react-dom": "^16.2.1",
     "react-hot-loader": "^4.0.1",
     "react-infinite-scroller": "^1.1.3",
     "react-redux": "^5.0.7",
