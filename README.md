@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2019-10-03 00:01:07
+> 上次更新: 2019-10-05 00:00:41
     
-共 [11](https://github.com/xuya227939/blog/labels) 个标签, [64](https://github.com/xuya227939/blog/issues) 篇博文
+共 [11](https://github.com/xuya227939/blog/labels) 个标签, [65](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [MobX or Redux?](https://github.com/xuya227939/LiuJiang-Blog/issues/81) 			 2019-10-04 14:14:34 
+
 - [Decorating class property failed. Please ensure that proposal-class-properties is enabled and set to use loose mode. To use proposal-class-properties in spec mode with decorators, wait for the next major version of decorators in stage 2.](https://github.com/xuya227939/LiuJiang-Blog/issues/80) 			 2019-10-01 12:21:33 
 
 - [index.js:39 Error: Decorating class property failed. Please ensure that proposal-class-properties is enabled and set to use loose mode. To use proposal-class-properties in spec mode with decorators, wait for the next major version of decorators in stage 2.](https://github.com/xuya227939/LiuJiang-Blog/issues/79) 			 2019-10-01 10:47:57 
@@ -12,8 +14,6 @@
 - [TRTC实践遇到的问题](https://github.com/xuya227939/LiuJiang-Blog/issues/78) 			 2019-09-17 05:49:35 
 
 - [Bump react-dom from 16.2.0 to 16.2.1 in /examples/saga/my-app](https://github.com/xuya227939/LiuJiang-Blog/pull/77) 			 2019-09-11 00:06:51 
-
-- [Bump webpack-dev-server from 3.1.3 to 3.1.11 in /examples/saga/my-app](https://github.com/xuya227939/LiuJiang-Blog/pull/76) 			 2019-09-11 00:05:44 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/LiuJiang-Blog/issues/32) 			 2018-09-27 11:14:57 
@@ -79,6 +79,8 @@
 - [Could not execute GraphicsMagick/ImageMagick](https://github.com/xuya227939/LiuJiang-Blog/issues/14) 			 2018-06-27 01:35:12 
 
 - [Nginx&node.js&express配置https](https://github.com/xuya227939/LiuJiang-Blog/issues/12) 			 2018-06-25 09:19:07 
+
+- [MobX or Redux?](https://github.com/xuya227939/LiuJiang-Blog/issues/81) 			 2019-10-04 14:14:34 
 
 - [eslint for react](https://github.com/xuya227939/LiuJiang-Blog/issues/63) 			 2019-06-13 10:22:14 
 
