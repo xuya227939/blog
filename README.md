@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2019-11-15 00:01:00
+> 上次更新: 2019-11-16 00:00:35
     
-共 [11](https://github.com/xuya227939/blog/labels) 个标签, [66](https://github.com/xuya227939/blog/issues) 篇博文
+共 [11](https://github.com/xuya227939/blog/labels) 个标签, [67](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [VScode开发效率插件](https://github.com/xuya227939/LiuJiang-Blog/issues/84) 			 2019-11-15 01:45:16 
+
 - [制定前端面试题](https://github.com/xuya227939/LiuJiang-Blog/issues/83) 			 2019-11-13 02:53:51 
 
 - [公司目前研发问题](https://github.com/xuya227939/LiuJiang-Blog/issues/82) 			 2019-10-23 10:53:06 
@@ -12,8 +14,6 @@
 - [MobX or Redux?](https://github.com/xuya227939/LiuJiang-Blog/issues/81) 			 2019-10-04 14:14:34 
 
 - [Decorating class property failed. Please ensure that proposal-class-properties is enabled and set to use loose mode. To use proposal-class-properties in spec mode with decorators, wait for the next major version of decorators in stage 2.](https://github.com/xuya227939/LiuJiang-Blog/issues/80) 			 2019-10-01 12:21:33 
-
-- [index.js:39 Error: Decorating class property failed. Please ensure that proposal-class-properties is enabled and set to use loose mode. To use proposal-class-properties in spec mode with decorators, wait for the next major version of decorators in stage 2.](https://github.com/xuya227939/LiuJiang-Blog/issues/79) 			 2019-10-01 10:47:57 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/LiuJiang-Blog/issues/32) 			 2018-09-27 11:14:57 
