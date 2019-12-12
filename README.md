@@ -1,9 +1,9 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2019-12-11 00:00:14
+> 上次更新: 2019-12-12 00:00:24
     
-共 [12](https://github.com/xuya227939/blog/labels) 个标签, [69](https://github.com/xuya227939/blog/issues) 篇博文
+共 [12](https://github.com/xuya227939/blog/labels) 个标签, [68](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
 - [Mobx源码解析-observable](https://github.com/xuya227939/LiuJiang-Blog/issues/86) 			 2019-12-06 09:56:13 
 
@@ -25,8 +25,6 @@
 - [水平居中](https://github.com/xuya227939/LiuJiang-Blog/issues/31) 			 2018-09-27 11:14:10 
 
 - [CSS盒模型](https://github.com/xuya227939/LiuJiang-Blog/issues/21) 			 2018-07-23 07:20:49 
-
-- [Bump react-dom from 16.2.0 to 16.2.1 in /examples/saga/my-app](https://github.com/xuya227939/LiuJiang-Blog/pull/77) 			 2019-09-11 00:06:51 
 
 - [git flow工作流程](https://github.com/xuya227939/LiuJiang-Blog/issues/64) 			 2019-06-18 14:42:54 
 
