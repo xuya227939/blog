@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2019-12-13 00:00:21
+> 上次更新: 2019-12-14 00:00:36
     
-共 [12](https://github.com/xuya227939/blog/labels) 个标签, [68](https://github.com/xuya227939/blog/issues) 篇博文
+共 [12](https://github.com/xuya227939/blog/labels) 个标签, [69](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [Bump npm from 5.8.0 to 6.13.4 in /examples/saga/my-app](https://github.com/xuya227939/LiuJiang-Blog/pull/87) 			 2019-12-13 19:10:03 
+
 - [Mobx源码解析-observable](https://github.com/xuya227939/LiuJiang-Blog/issues/86) 			 2019-12-06 09:56:13 
 
 - [基于mobx封装组件loading](https://github.com/xuya227939/LiuJiang-Blog/issues/85) 			 2019-11-19 09:37:42 
@@ -12,8 +14,6 @@
 - [VScode开发效率插件](https://github.com/xuya227939/LiuJiang-Blog/issues/84) 			 2019-11-15 01:45:16 
 
 - [制定前端笔试题](https://github.com/xuya227939/LiuJiang-Blog/issues/83) 			 2019-11-13 02:53:51 
-
-- [公司目前研发问题](https://github.com/xuya227939/LiuJiang-Blog/issues/82) 			 2019-10-23 10:53:06 
 
 ## 所有 
 - [Mobx源码解析-observable](https://github.com/xuya227939/LiuJiang-Blog/issues/86) 			 2019-12-06 09:56:13 
@@ -25,6 +25,8 @@
 - [水平居中](https://github.com/xuya227939/LiuJiang-Blog/issues/31) 			 2018-09-27 11:14:10 
 
 - [CSS盒模型](https://github.com/xuya227939/LiuJiang-Blog/issues/21) 			 2018-07-23 07:20:49 
+
+- [Bump npm from 5.8.0 to 6.13.4 in /examples/saga/my-app](https://github.com/xuya227939/LiuJiang-Blog/pull/87) 			 2019-12-13 19:10:03 
 
 - [git flow工作流程](https://github.com/xuya227939/LiuJiang-Blog/issues/64) 			 2019-06-18 14:42:54 
 
