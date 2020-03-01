@@ -1,7 +1,7 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2020-02-29 00:00:12
+> 上次更新: 2020-03-01 00:00:31
     
 共 [12](https://github.com/xuya227939/blog/labels) 个标签, [70](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
@@ -132,7 +132,7 @@
 
 - [网站性能优化几个点](https://github.com/xuya227939/LiuJiang-Blog/issues/27) 			 2018-08-16 02:18:12 
 
-- [TRTC实践遇到的问题](https://github.com/xuya227939/LiuJiang-Blog/issues/78) 			 2019-09-17 05:49:35 
+- [关于TRTC(实时音视频通话模式)在我司的实践](https://github.com/xuya227939/LiuJiang-Blog/issues/78) 			 2019-09-17 05:49:35 
 
 - [VScode开发效率插件](https://github.com/xuya227939/LiuJiang-Blog/issues/84) 			 2019-11-15 01:45:16 
 
