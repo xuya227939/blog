@@ -1,7 +1,7 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2020-03-16 00:00:46
+> 上次更新: 2020-03-17 00:00:31
     
 共 [13](https://github.com/xuya227939/blog/labels) 个标签, [68](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
@@ -112,7 +112,7 @@
 
 - [React全家桶建站教程-Express](https://github.com/xuya227939/LiuJiang-Blog/issues/2) 			 2018-06-07 03:37:22 
 
-- [React全家桶建站教程-必看](https://github.com/xuya227939/LiuJiang-Blog/issues/1) 			 2018-06-07 02:32:34 
+- [React全家桶建站教程系列-前端](https://github.com/xuya227939/LiuJiang-Blog/issues/1) 			 2018-06-07 02:32:34 
 
 - [基于React、Redux、Webpack 和 React-Router的项目模板。](https://github.com/xuya227939/LiuJiang-Blog/issues/89) 			 2020-02-13 14:42:25 
 
