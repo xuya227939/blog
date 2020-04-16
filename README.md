@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2020-04-15 00:00:35
+> 上次更新: 2020-04-16 00:00:33
     
-共 [13](https://github.com/xuya227939/blog/labels) 个标签, [70](https://github.com/xuya227939/blog/issues) 篇博文
+共 [13](https://github.com/xuya227939/blog/labels) 个标签, [71](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [解决如何知道iframe下载完成](https://github.com/xuya227939/LiuJiang-Blog/issues/92) 			 2020-04-15 05:52:30 
+
 - [解决canvas，toDataURL跨域问题](https://github.com/xuya227939/LiuJiang-Blog/issues/91) 			 2020-04-05 15:03:45 
 
 - [解决PDF.js转Canvas图片，toDataURL空白问题](https://github.com/xuya227939/LiuJiang-Blog/issues/90) 			 2020-04-04 08:19:30 
@@ -12,8 +14,6 @@
 - [基于React、Redux、Webpack 和 React-Router的项目模板。](https://github.com/xuya227939/LiuJiang-Blog/issues/89) 			 2020-02-13 14:42:25 
 
 - [基于React、Mobx、Webpack 和 React-Router的项目模板。](https://github.com/xuya227939/LiuJiang-Blog/issues/88) 			 2020-02-09 08:09:49 
-
-- [Mobx源码解析-observable](https://github.com/xuya227939/LiuJiang-Blog/issues/86) 			 2019-12-06 09:56:13 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/LiuJiang-Blog/issues/32) 			 2018-09-27 11:14:57 
@@ -59,6 +59,8 @@
 - [node.js 爬虫获取网页内容乱码](https://github.com/xuya227939/LiuJiang-Blog/issues/72) 			 2019-08-08 01:47:41 
 
 - [ Error: write EPROTO 3928:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332](https://github.com/xuya227939/LiuJiang-Blog/issues/71) 			 2019-07-26 05:26:49 
+
+- [解决如何知道iframe下载完成](https://github.com/xuya227939/LiuJiang-Blog/issues/92) 			 2020-04-15 05:52:30 
 
 - [解决canvas，toDataURL跨域问题](https://github.com/xuya227939/LiuJiang-Blog/issues/91) 			 2020-04-05 15:03:45 
 
