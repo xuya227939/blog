@@ -1,11 +1,11 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2020-04-21 00:00:13
+> 上次更新: 2020-04-22 00:00:15
     
 共 [13](https://github.com/xuya227939/blog/labels) 个标签, [72](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
-- [关于如何在Mobx中组织Store](https://github.com/xuya227939/LiuJiang-Blog/issues/93) 			 2020-04-16 03:46:49 
+- [关于如何在Mobx中组织Stores](https://github.com/xuya227939/LiuJiang-Blog/issues/93) 			 2020-04-16 03:46:49 
 
 - [解决如何知道iframe下载完成](https://github.com/xuya227939/LiuJiang-Blog/issues/92) 			 2020-04-15 05:52:30 
 
@@ -50,7 +50,7 @@
 
 - [JS实现斐波那契数列](https://github.com/xuya227939/LiuJiang-Blog/issues/15) 			 2018-07-16 03:05:07 
 
-- [关于如何在Mobx中组织Store](https://github.com/xuya227939/LiuJiang-Blog/issues/93) 			 2020-04-16 03:46:49 
+- [关于如何在Mobx中组织Stores](https://github.com/xuya227939/LiuJiang-Blog/issues/93) 			 2020-04-16 03:46:49 
 
 - [基于React、Mobx、Webpack 和 React-Router的项目模板。](https://github.com/xuya227939/LiuJiang-Blog/issues/88) 			 2020-02-09 08:09:49 
 
