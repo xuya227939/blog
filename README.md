@@ -1,7 +1,7 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2020-06-24 00:00:36
+> 上次更新: 2020-06-25 00:00:11
     
 共 [13](https://github.com/xuya227939/blog/labels) 个标签, [80](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
@@ -149,6 +149,8 @@
 - [VS Code提高前端开发效率插件](https://github.com/xuya227939/LiuJiang-Blog/issues/84) 			 2019-11-15 01:45:16 
 
 - [VS Code用户自定义配置推荐](https://github.com/xuya227939/LiuJiang-Blog/issues/52) 			 2019-05-07 02:31:15 
+
+- [macOS下iTerm如何安装rzsz](https://github.com/xuya227939/LiuJiang-Blog/issues/101) 			 2020-06-20 14:30:38 
 
 - [如何基于tristana项目模板，打造一个基本列表展示](https://github.com/xuya227939/LiuJiang-Blog/issues/100) 			 2020-06-17 02:28:49 
 
