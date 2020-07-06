@@ -1,7 +1,7 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2020-07-05 00:00:55
+> 上次更新: 2020-07-06 00:01:48
     
 共 [13](https://github.com/xuya227939/blog/labels) 个标签, [81](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
@@ -149,6 +149,8 @@
 - [VS Code提高前端开发效率插件](https://github.com/xuya227939/LiuJiang-Blog/issues/84) 			 2019-11-15 01:45:16 
 
 - [VS Code用户自定义配置推荐](https://github.com/xuya227939/LiuJiang-Blog/issues/52) 			 2019-05-07 02:31:15 
+
+- [如何搭建前端异常监控系统](https://github.com/xuya227939/LiuJiang-Blog/issues/102) 			 2020-07-04 01:31:50 
 
 - [macOS下iTerm如何安装rzsz](https://github.com/xuya227939/LiuJiang-Blog/issues/101) 			 2020-06-20 14:30:38 
 
