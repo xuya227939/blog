@@ -1,12 +1,10 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2020-07-09 00:01:11
+> 上次更新: 2020-07-10 00:01:05
     
-共 [13](https://github.com/xuya227939/blog/labels) 个标签, [82](https://github.com/xuya227939/blog/issues) 篇博文
+共 [13](https://github.com/xuya227939/blog/labels) 个标签, [81](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
-- [Bump npm from 5.8.0 to 6.14.6 in /examples/saga/my-app](https://github.com/xuya227939/LiuJiang-Blog/pull/103) 			 2020-07-07 20:08:13 
-
 - [如何搭建前端异常监控系统](https://github.com/xuya227939/LiuJiang-Blog/issues/102) 			 2020-07-04 01:31:50 
 
 - [macOS下iTerm如何安装rzsz](https://github.com/xuya227939/LiuJiang-Blog/issues/101) 			 2020-06-20 14:30:38 
@@ -15,14 +13,14 @@
 
 - [如何基于lucian项目模板，打造一个基本列表展示](https://github.com/xuya227939/LiuJiang-Blog/issues/99) 			 2020-06-17 02:27:46 
 
+- [基于Taro实现签字，轨迹回放](https://github.com/xuya227939/LiuJiang-Blog/issues/98) 			 2020-06-16 06:02:18 
+
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/LiuJiang-Blog/issues/32) 			 2018-09-27 11:14:57 
 
 - [水平居中](https://github.com/xuya227939/LiuJiang-Blog/issues/31) 			 2018-09-27 11:14:10 
 
 - [CSS盒模型](https://github.com/xuya227939/LiuJiang-Blog/issues/21) 			 2018-07-23 07:20:49 
-
-- [Bump npm from 5.8.0 to 6.14.6 in /examples/saga/my-app](https://github.com/xuya227939/LiuJiang-Blog/pull/103) 			 2020-07-07 20:08:13 
 
 - [Git Flow工作流程](https://github.com/xuya227939/LiuJiang-Blog/issues/64) 			 2019-06-18 14:42:54 
 
