@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2020-07-24 00:02:27
+> 上次更新: 2020-07-25 00:01:04
     
-共 [13](https://github.com/xuya227939/blog/labels) 个标签, [81](https://github.com/xuya227939/blog/issues) 篇博文
+共 [13](https://github.com/xuya227939/blog/labels) 个标签, [82](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [命令行MySQL基本操作(CentOS)](https://github.com/xuya227939/LiuJiang-Blog/issues/105) 			 2020-07-24 02:54:53 
+
 - [微信如何打开VConsole](https://github.com/xuya227939/LiuJiang-Blog/issues/104) 			 2020-07-20 23:15:37 
 
 - [如何搭建前端异常监控系统](https://github.com/xuya227939/LiuJiang-Blog/issues/102) 			 2020-07-04 01:31:50 
@@ -12,8 +14,6 @@
 - [macOS下iTerm如何安装rzsz](https://github.com/xuya227939/LiuJiang-Blog/issues/101) 			 2020-06-20 14:30:38 
 
 - [如何基于tristana项目模板，打造一个基本列表展示](https://github.com/xuya227939/LiuJiang-Blog/issues/100) 			 2020-06-17 02:28:49 
-
-- [如何基于lucian项目模板，打造一个基本列表展示](https://github.com/xuya227939/LiuJiang-Blog/issues/99) 			 2020-06-17 02:27:46 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/LiuJiang-Blog/issues/32) 			 2018-09-27 11:14:57 
@@ -149,6 +149,8 @@
 - [VS Code提高前端开发效率插件](https://github.com/xuya227939/LiuJiang-Blog/issues/84) 			 2019-11-15 01:45:16 
 
 - [VS Code用户自定义配置推荐](https://github.com/xuya227939/LiuJiang-Blog/issues/52) 			 2019-05-07 02:31:15 
+
+- [命令行MySQL基本操作(CentOS)](https://github.com/xuya227939/LiuJiang-Blog/issues/105) 			 2020-07-24 02:54:53 
 
 - [微信如何打开VConsole](https://github.com/xuya227939/LiuJiang-Blog/issues/104) 			 2020-07-20 23:15:37 
 
