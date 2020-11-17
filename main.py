@@ -38,12 +38,11 @@ def update_readme_md_file(contents):
 def login():
     global user
     user = Github('GITHUB_ACCESS_TOKEN')
-    print(user)
 
 
 def get_blog():
     global blog
-    blog = user.get_repo('GITHUB_USER/LiuJiang-Blog')
+    blog = user.get_repo('%s blog')
     print(blog)
 
 
