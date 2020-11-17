@@ -28,7 +28,7 @@ workflows:
           cron: "0 0 * * *"
           filters:
             branches:
-              only: master
+              only: main
 
     jobs:
       - build
