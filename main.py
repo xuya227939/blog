@@ -42,8 +42,7 @@ def login():
 
 def get_blog():
     global blog
-    blog = user.get_repo('%s blog')
-    print(blog)
+    blog = user.get_repo('%s/blog')
 
 
 def bundle_summary_section():
@@ -138,11 +137,11 @@ def execute():
 
     # 1. login
     login()
-
-    return
     
     # 2. get blog
     get_blog()
+    
+    return
 
     # 3. summary section
     summary_section = bundle_summary_section()
