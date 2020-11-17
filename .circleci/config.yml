@@ -17,5 +17,5 @@ jobs:
       - run: git pull origin main
       - run: git add .
       - run: git commit -m "Update From Circle CI"
-      - run: git push https://$GITHUB_LOGIN:$GITHUB_PASSWORD@github.com/$GITHUB_LOGIN/blog.git
+      - run: git push https://$GITHUB_USER:$GITHUB_PASSWORD@github.com/$GITHUB_USER/blog.git
       - run: echo 'done'
