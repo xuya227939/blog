@@ -11,8 +11,8 @@ jobs:
       - run: python3 main.py
       - run: git version
       - run: git status
-      - run: git config --global user.email "1245244711@qq.com"
-      - run: git config --global user.name "xuya227939"
+      - run: git config --global user.email $GITHUB_MAIL
+      - run: git config --global user.name $GITHUB_USER
       - run: git checkout main
       - run: git pull origin main
       - run: git add .
