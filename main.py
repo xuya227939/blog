@@ -139,10 +139,10 @@ def execute():
     # 1. login
     login()
 
+    return
+    
     # 2. get blog
     get_blog()
-    
-    return
 
     # 3. summary section
     summary_section = bundle_summary_section()
