@@ -13,8 +13,8 @@ jobs:
       - run: git status
       - run: git config --global user.email "1245244711@qq.com"
       - run: git config --global user.name "xuya227939"
-      - run: git checkout master
-      - run: git pull origin master
+      - run: git checkout main
+      - run: git pull origin main
       - run: git add .
       - run: git commit -m "Update From Circle CI"
       - run: git push https://$GITHUB_LOGIN:$GITHUB_PASSWORD@github.com/$GITHUB_LOGIN/blog.git
