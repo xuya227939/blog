@@ -25,10 +25,10 @@ def sup(text: str):
 
 def sub(text: str):
     return text
-    # return '<sub>%s</sub>' % text
 
 
 def update_readme_md_file(contents):
+    print(contents)
     with codecs.open('README.md', 'w', encoding='utf-8') as f:
         f.writelines(contents)
         f.flush()
@@ -37,14 +37,13 @@ def update_readme_md_file(contents):
 
 def login():
     global user
-    username = os.environ.get('GITHUB_LOGIN')
-    password = os.environ.get('GITHUB_PASSWORD')
-    user = Github(username, password)
+    access_token = "GITHUB_ACCESS_TOKEN"
+    user = Github(access_token)
 
 
 def get_blog():
     global blog
-    blog = user.get_repo('%s/blog' % user.get_user().login)
+    blog = user.get_repo('xuya227939/LiuJiang-Blog')
 
 
 def bundle_summary_section():
@@ -146,9 +145,6 @@ def execute():
     # 3. summary section
     summary_section = bundle_summary_section()
     print(summary_section)
-
-    # pinned_issues_section = bundle_pinned_issues_section()
-    # print(pinned_issues_section)
 
     # 4. new created section
     new_created_section = bundle_new_created_section()
