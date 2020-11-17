@@ -37,7 +37,7 @@ def update_readme_md_file(contents):
 
 def login():
     global user
-    user = Github('GITHUB_USER', 'GITHUB_PASSWORD')
+    user = Github('GITHUB_ACCESS_TOKEN')
 
 
 def get_blog():
