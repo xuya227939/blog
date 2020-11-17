@@ -37,12 +37,12 @@ def update_readme_md_file(contents):
 
 def login():
     global user
-    user = Github("GITHUB_ACCESS_TOKEN")
+    user = Github('GITHUB_ACCESS_TOKEN')
 
 
 def get_blog():
     global blog
-    blog = user.get_repo('xuya227939/LiuJiang-Blog')
+    blog = user.get_repo('GITHUB_LOGIN/LiuJiang-Blog')
 
 
 def bundle_summary_section():
