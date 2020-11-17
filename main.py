@@ -42,7 +42,7 @@ def login():
 
 def get_blog():
     global blog
-    blog = user.get_repo('%s/blog')
+    blog = user.get_repo('GITHUB_USER/LiuJiang-Blog')
 
 
 def bundle_summary_section():
@@ -139,9 +139,7 @@ def execute():
     login()
     
     # 2. get blog
-    get_blog()
-    
-    return
+    get_blog() 
 
     # 3. summary section
     summary_section = bundle_summary_section()
