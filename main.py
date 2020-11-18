@@ -140,7 +140,7 @@ def execute():
     login()
     
     # 2. get blog
-    get_blog() 
+    # get_blog() 
 
     # 3. summary section
     summary_section = bundle_summary_section()
