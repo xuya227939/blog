@@ -37,7 +37,7 @@ def update_readme_md_file(contents):
 
 def login():
     global user
-    123
+    kill
     user = Github('GITHUB_USER', 'GITHUB_ACCESS_TOKEN')
 
 
