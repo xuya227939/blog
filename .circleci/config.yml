@@ -19,3 +19,15 @@ jobs:
       - run: git commit -m "Update From Circle CI"
       - run: git push https://$GITHUB_USER:$GITHUB_PASSWORD@github.com/$GITHUB_USER/blog.git
       - run: echo 'done'
+workflows:
+  version: 2
+  scheduled-workflow:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only: main
+
+    jobs:
+      - build
