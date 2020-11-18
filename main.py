@@ -8,6 +8,8 @@ import os
 import time
 import urllib.parse
 import codecs
+import os
+
 
 user: Github
 blog: Repository
@@ -37,7 +39,8 @@ def update_readme_md_file(contents):
 
 def login():
     global user
-    user = Github('GITHUB_USER', 'GITHUB_ACCESS_TOKEN')
+    #user = Github('GITHUB_USER', 'GITHUB_ACCESS_TOKEN')
+    user = Github(os.getenv('GITHUB_ACCESS_TOKEN'))
 
 
 def get_blog():
