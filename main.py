@@ -42,7 +42,7 @@ def login():
 
 def get_blog():
     global blog
-    blog = user.get_repo('GITHUB_USER/LiuJiang-Blog')
+    blog = user.get_repo('xuya227939/LiuJiang-Blog')
 
 
 def bundle_summary_section():
