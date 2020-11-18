@@ -37,7 +37,6 @@ def update_readme_md_file(contents):
 
 def login():
     global user
-    kill
     user = Github('GITHUB_USER', 'GITHUB_ACCESS_TOKEN')
 
 
@@ -140,7 +139,7 @@ def execute():
     login()
     
     # 2. get blog
-    # get_blog() 
+    get_blog() 
 
     # 3. summary section
     summary_section = bundle_summary_section()
