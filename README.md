@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2021-01-18 00:05:53
+> 上次更新: 2021-01-19 00:05:12
     
-共 [15](https://github.com/xuya227939/blog/labels) 个标签, [86](https://github.com/xuya227939/blog/issues) 篇博文
+共 [15](https://github.com/xuya227939/blog/labels) 个标签, [87](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [什么是Serverless？](https://github.com/xuya227939/LiuJiang-Blog/issues/110) 			 2021-01-18 06:54:31 
+
 - [Git 分支管理策略](https://github.com/xuya227939/LiuJiang-Blog/issues/109) 			 2021-01-06 10:16:04 
 
 - [Webpack4如何性能优化](https://github.com/xuya227939/LiuJiang-Blog/issues/108) 			 2020-11-07 07:47:57 
@@ -12,8 +14,6 @@
 - [Taro init遇到权限问题（mac环境）](https://github.com/xuya227939/LiuJiang-Blog/issues/107) 			 2020-10-26 06:21:27 
 
 - [Taro + Taro UI实现列表下拉刷新，无限滚动](https://github.com/xuya227939/LiuJiang-Blog/issues/106) 			 2020-08-03 02:18:47 
-
-- [命令行MySQL基本操作(CentOS)](https://github.com/xuya227939/LiuJiang-Blog/issues/105) 			 2020-07-24 02:54:53 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/LiuJiang-Blog/issues/32) 			 2018-09-27 11:14:57 
