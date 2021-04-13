@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2021-04-12 00:05:03
+> 上次更新: 2021-04-13 00:05:15
     
-共 [15](https://github.com/xuya227939/blog/labels) 个标签, [79](https://github.com/xuya227939/blog/issues) 篇博文
+共 [15](https://github.com/xuya227939/blog/labels) 个标签, [80](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [前端模块化](https://github.com/xuya227939/LiuJiang-Blog/issues/116) 			 2021-04-12 13:52:38 
+
 - [SaaS架构图](https://github.com/xuya227939/LiuJiang-Blog/issues/114) 			 2021-03-30 03:10:43 
 
 - [从零搭建 React 开发环境](https://github.com/xuya227939/LiuJiang-Blog/issues/112) 			 2021-02-14 04:40:55 
@@ -12,8 +14,6 @@
 - [项目0-1](https://github.com/xuya227939/LiuJiang-Blog/issues/111) 			 2021-02-07 15:57:31 
 
 - [什么是Serverless？](https://github.com/xuya227939/LiuJiang-Blog/issues/110) 			 2021-01-18 06:54:31 
-
-- [Git 分支管理策略](https://github.com/xuya227939/LiuJiang-Blog/issues/109) 			 2021-01-06 10:16:04 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/LiuJiang-Blog/issues/32) 			 2018-09-27 11:14:57 
@@ -25,6 +25,8 @@
 - [Git 分支管理策略](https://github.com/xuya227939/LiuJiang-Blog/issues/109) 			 2021-01-06 10:16:04 
 
 - [GitHub 本地配置和全局配置](https://github.com/xuya227939/LiuJiang-Blog/issues/35) 			 2018-10-25 08:43:53 
+
+- [前端模块化](https://github.com/xuya227939/LiuJiang-Blog/issues/116) 			 2021-04-12 13:52:38 
 
 - [JS 数组扁平化之简单方法实现](https://github.com/xuya227939/LiuJiang-Blog/issues/75) 			 2019-09-10 02:14:20 
 
