@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2021-05-03 00:05:03
+> 上次更新: 2021-05-04 00:05:10
     
-共 [15](https://github.com/xuya227939/blog/labels) 个标签, [82](https://github.com/xuya227939/blog/issues) 篇博文
+共 [15](https://github.com/xuya227939/blog/labels) 个标签, [83](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [我是如何突围传统行业的？](https://github.com/xuya227939/LiuJiang-Blog/issues/119) 			 2021-05-03 00:48:45 
+
 - [4 年前端如何选择方向](https://github.com/xuya227939/LiuJiang-Blog/issues/118) 			 2021-04-28 05:45:28 
 
 - [关于 tristana ](https://github.com/xuya227939/LiuJiang-Blog/issues/117) 			 2021-04-19 02:20:19 
@@ -12,8 +14,6 @@
 - [前端模块化](https://github.com/xuya227939/LiuJiang-Blog/issues/116) 			 2021-04-12 13:52:38 
 
 - [SaaS架构图](https://github.com/xuya227939/LiuJiang-Blog/issues/114) 			 2021-03-30 03:10:43 
-
-- [从零搭建 React 开发环境](https://github.com/xuya227939/LiuJiang-Blog/issues/112) 			 2021-02-14 04:40:55 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/LiuJiang-Blog/issues/32) 			 2018-09-27 11:14:57 
