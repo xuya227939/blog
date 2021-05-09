@@ -1,7 +1,7 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2021-05-08 00:05:03
+> 上次更新: 2021-05-09 00:05:09
     
 共 [15](https://github.com/xuya227939/blog/labels) 个标签, [83](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
@@ -56,7 +56,7 @@
 
 - [如何基于tristana项目模板，打造一个基本列表展示](https://github.com/xuya227939/LiuJiang-Blog/issues/100) 			 2020-06-17 02:28:49 
 
-- [关于如何在 MobX 中组织 Stores](https://github.com/xuya227939/LiuJiang-Blog/issues/93) 			 2020-04-16 03:46:49 
+- [如何在 MobX 中组织 Stores](https://github.com/xuya227939/LiuJiang-Blog/issues/93) 			 2020-04-16 03:46:49 
 
 - [基于React、Mobx、Webpack 和 React-Router的项目模板。](https://github.com/xuya227939/LiuJiang-Blog/issues/88) 			 2020-02-09 08:09:49 
 
