@@ -1,7 +1,7 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2021-05-16 00:05:04
+> 上次更新: 2021-05-17 00:05:06
     
 共 [15](https://github.com/xuya227939/blog/labels) 个标签, [83](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
@@ -110,7 +110,7 @@
 
 - [关于 tristana ](https://github.com/xuya227939/LiuJiang-Blog/issues/117) 			 2021-04-19 02:20:19 
 
-- [从零搭建 React 开发环境](https://github.com/xuya227939/LiuJiang-Blog/issues/112) 			 2021-02-14 04:40:55 
+- [从零搭建 Vite + React 开发环境](https://github.com/xuya227939/LiuJiang-Blog/issues/112) 			 2021-02-14 04:40:55 
 
 - [如何基于tristana项目模板，打造一个基本列表展示](https://github.com/xuya227939/LiuJiang-Blog/issues/100) 			 2020-06-17 02:28:49 
 
@@ -160,7 +160,7 @@
 
 - [SaaS架构图](https://github.com/xuya227939/LiuJiang-Blog/issues/114) 			 2021-03-30 03:10:43 
 
-- [从零搭建 React 开发环境](https://github.com/xuya227939/LiuJiang-Blog/issues/112) 			 2021-02-14 04:40:55 
+- [从零搭建 Vite + React 开发环境](https://github.com/xuya227939/LiuJiang-Blog/issues/112) 			 2021-02-14 04:40:55 
 
 - [项目0-1](https://github.com/xuya227939/LiuJiang-Blog/issues/111) 			 2021-02-07 15:57:31 
 
