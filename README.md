@@ -1,7 +1,7 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2021-06-03 00:05:09
+> 上次更新: 2021-06-04 00:05:06
     
 共 [15](https://github.com/xuya227939/blog/labels) 个标签, [84](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
@@ -76,7 +76,7 @@
 
 - [Webpack 如何配置热更新](https://github.com/xuya227939/LiuJiang-Blog/issues/96) 			 2020-05-20 10:23:46 
 
-- [微信小程序如何旋转签字、图片](https://github.com/xuya227939/LiuJiang-Blog/issues/95) 			 2020-05-13 01:53:52 
+- [微信小程序 Canvas 签字](https://github.com/xuya227939/LiuJiang-Blog/issues/95) 			 2020-05-13 01:53:52 
 
 - [解决前端如何通过游览器下载视频地址](https://github.com/xuya227939/LiuJiang-Blog/issues/94) 			 2020-05-07 08:18:37 
 
