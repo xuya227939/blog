@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2021-06-25 00:05:12
+> 上次更新: 2021-06-26 00:05:14
     
-共 [15](https://github.com/xuya227939/blog/labels) 个标签, [86](https://github.com/xuya227939/blog/issues) 篇博文
+共 [15](https://github.com/xuya227939/blog/labels) 个标签, [87](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [MacBook Pro 外接显示屏开启 HiDPI](https://github.com/xuya227939/LiuJiang-Blog/issues/123) 			 2021-06-25 11:29:35 
+
 - [国行 Xbox Series X 深度体验](https://github.com/xuya227939/LiuJiang-Blog/issues/122) 			 2021-06-18 18:36:38 
 
 - [Webpack 如何配置代理？](https://github.com/xuya227939/LiuJiang-Blog/issues/121) 			 2021-06-10 01:22:49 
@@ -12,8 +14,6 @@
 - [配置多入口 Webpack 热更新失效？](https://github.com/xuya227939/LiuJiang-Blog/issues/120) 			 2021-05-20 03:01:36 
 
 - [我是如何突围传统行业的？](https://github.com/xuya227939/LiuJiang-Blog/issues/119) 			 2021-05-03 00:48:45 
-
-- [4 年前端如何选择方向](https://github.com/xuya227939/LiuJiang-Blog/issues/118) 			 2021-04-28 05:45:28 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/LiuJiang-Blog/issues/32) 			 2018-09-27 11:14:57 
@@ -151,6 +151,8 @@
 - [Taro init遇到权限问题（mac环境）](https://github.com/xuya227939/LiuJiang-Blog/issues/107) 			 2020-10-26 06:21:27 
 
 - [Taro + Taro UI实现列表下拉刷新，无限滚动](https://github.com/xuya227939/LiuJiang-Blog/issues/106) 			 2020-08-03 02:18:47 
+
+- [MacBook Pro 外接显示屏开启 HiDPI](https://github.com/xuya227939/LiuJiang-Blog/issues/123) 			 2021-06-25 11:29:35 
 
 - [Webpack 如何配置代理？](https://github.com/xuya227939/LiuJiang-Blog/issues/121) 			 2021-06-10 01:22:49 
 
