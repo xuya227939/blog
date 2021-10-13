@@ -1,19 +1,19 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2021-07-08 00:05:15
+> 上次更新: 2021-10-13 08:08:04
     
-共 [15](https://github.com/xuya227939/blog/labels) 个标签, [87](https://github.com/xuya227939/blog/issues) 篇博文
+共 [16](https://github.com/xuya227939/blog/labels) 个标签, [91](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [检测浏览器刷新还是退出代码](https://github.com/xuya227939/LiuJiang-Blog/issues/127) 			 2021-09-27 07:17:23 
+
+- [微信小程序 web-view 下渲染 cover-view，文字消失](https://github.com/xuya227939/LiuJiang-Blog/issues/126) 			 2021-09-26 03:16:37 
+
+- [甜新前端工程化探索之路](https://github.com/xuya227939/LiuJiang-Blog/issues/125) 			 2021-08-15 10:23:03 
+
+- [企业微信自建应用](https://github.com/xuya227939/LiuJiang-Blog/issues/124) 			 2021-07-18 06:58:23 
+
 - [MacBook Pro 外接显示屏开启 HiDPI](https://github.com/xuya227939/LiuJiang-Blog/issues/123) 			 2021-06-25 11:29:35 
-
-- [国行 Xbox Series X 深度体验](https://github.com/xuya227939/LiuJiang-Blog/issues/122) 			 2021-06-18 18:36:38 
-
-- [Webpack 如何配置代理？](https://github.com/xuya227939/LiuJiang-Blog/issues/121) 			 2021-06-10 01:22:49 
-
-- [配置多入口 Webpack 热更新失效？](https://github.com/xuya227939/LiuJiang-Blog/issues/120) 			 2021-05-20 03:01:36 
-
-- [我是如何突围传统行业的？](https://github.com/xuya227939/LiuJiang-Blog/issues/119) 			 2021-05-03 00:48:45 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/LiuJiang-Blog/issues/32) 			 2018-09-27 11:14:57 
@@ -25,6 +25,8 @@
 - [Git 分支管理策略](https://github.com/xuya227939/LiuJiang-Blog/issues/109) 			 2021-01-06 10:16:04 
 
 - [GitHub 本地配置和全局配置](https://github.com/xuya227939/LiuJiang-Blog/issues/35) 			 2018-10-25 08:43:53 
+
+- [检测浏览器刷新还是退出代码](https://github.com/xuya227939/LiuJiang-Blog/issues/127) 			 2021-09-27 07:17:23 
 
 - [关于 tristana ](https://github.com/xuya227939/LiuJiang-Blog/issues/117) 			 2021-04-19 02:20:19 
 
@@ -51,6 +53,8 @@
 - [JS 实现各种排序](https://github.com/xuya227939/LiuJiang-Blog/issues/16) 			 2018-07-16 03:23:52 
 
 - [JS 实现斐波那契数列](https://github.com/xuya227939/LiuJiang-Blog/issues/15) 			 2018-07-16 03:05:07 
+
+- [微信小程序 web-view 下渲染 cover-view，文字消失](https://github.com/xuya227939/LiuJiang-Blog/issues/126) 			 2021-09-26 03:16:37 
 
 - [关于 tristana ](https://github.com/xuya227939/LiuJiang-Blog/issues/117) 			 2021-04-19 02:20:19 
 
@@ -151,6 +155,8 @@
 - [Taro init遇到权限问题（mac环境）](https://github.com/xuya227939/LiuJiang-Blog/issues/107) 			 2020-10-26 06:21:27 
 
 - [Taro + Taro UI实现列表下拉刷新，无限滚动](https://github.com/xuya227939/LiuJiang-Blog/issues/106) 			 2020-08-03 02:18:47 
+
+- [企业微信自建应用](https://github.com/xuya227939/LiuJiang-Blog/issues/124) 			 2021-07-18 06:58:23 
 
 - [MacBook Pro 外接显示屏开启 HiDPI](https://github.com/xuya227939/LiuJiang-Blog/issues/123) 			 2021-06-25 11:29:35 
 
