@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2022-05-09 00:05:03
+> 上次更新: 2022-05-10 00:05:05
     
-共 [17](https://github.com/xuya227939/blog/labels) 个标签, [101](https://github.com/xuya227939/blog/issues) 篇博文
+共 [17](https://github.com/xuya227939/blog/labels) 个标签, [102](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [对数字孪生的思考](https://github.com/xuya227939/blog/issues/138) 			 2022-05-09 06:51:50 
+
 - [Tauri 与 Electron](https://github.com/xuya227939/blog/issues/137) 			 2022-04-05 15:36:26 
 
 - [【技术需求】Element 升级 2.x](https://github.com/xuya227939/blog/issues/136) 			 2022-03-28 08:19:09 
@@ -12,8 +14,6 @@
 - [React Router v6 探索](https://github.com/xuya227939/blog/issues/135) 			 2022-03-27 17:11:58 
 
 - [5年经验(专升本)入职B站分享](https://github.com/xuya227939/blog/issues/134) 			 2022-03-19 04:25:23 
-
-- [Pnpm](https://github.com/xuya227939/blog/issues/133) 			 2022-02-23 01:22:36 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/blog/issues/32) 			 2018-09-27 11:14:57 
