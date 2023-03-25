@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2023-03-24 00:05:00
+> 上次更新: 2023-03-25 00:05:02
     
-共 [19](https://github.com/xuya227939/blog/labels) 个标签, [106](https://github.com/xuya227939/blog/issues) 篇博文
+共 [19](https://github.com/xuya227939/blog/labels) 个标签, [107](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
+- [win node-sass 安装失败](https://github.com/xuya227939/blog/issues/147) 			 2023-03-24 07:34:18 
+
 - [程序员就业前景](https://github.com/xuya227939/blog/issues/146) 			 2023-03-22 01:42:22 
 
 - [个人简历如何回答](https://github.com/xuya227939/blog/issues/141) 			 2022-09-21 02:48:17 
@@ -12,8 +14,6 @@
 - [下份工作更加关注的地方](https://github.com/xuya227939/blog/issues/140) 			 2022-09-21 02:46:55 
 
 - [大厂面试题](https://github.com/xuya227939/blog/issues/139) 			 2022-09-21 02:44:44 
-
-- [对数字孪生的思考](https://github.com/xuya227939/blog/issues/138) 			 2022-05-09 06:51:50 
 
 ## 所有 
 - [垂直居中](https://github.com/xuya227939/blog/issues/32) 			 2018-09-27 11:14:57 
