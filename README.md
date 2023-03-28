@@ -1,9 +1,9 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2023-03-27 00:05:15
+> 上次更新: 2023-03-28 00:05:10
     
-共 [19](https://github.com/xuya227939/blog/labels) 个标签, [107](https://github.com/xuya227939/blog/issues) 篇博文
+共 [20](https://github.com/xuya227939/blog/labels) 个标签, [107](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
 - [win node-sass 安装失败](https://github.com/xuya227939/blog/issues/147) 			 2023-03-24 07:34:18 
 
@@ -75,6 +75,8 @@
 - [Node.js 爬虫获取网页内容乱码](https://github.com/xuya227939/blog/issues/72) 			 2019-08-08 01:47:41 
 
 - [ Error: write EPROTO 3928:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332](https://github.com/xuya227939/blog/issues/71) 			 2019-07-26 05:26:49 
+
+- [win node-sass 安装失败](https://github.com/xuya227939/blog/issues/147) 			 2023-03-24 07:34:18 
 
 - [Webpack 如何配置代理？](https://github.com/xuya227939/blog/issues/121) 			 2021-06-10 01:22:49 
 
@@ -249,6 +251,10 @@
 - [关于 tristana ](https://github.com/xuya227939/blog/issues/117) 			 2021-04-19 02:20:19 
 
 - [Webpack4 性能优化实践](https://github.com/xuya227939/blog/issues/108) 			 2020-11-07 07:47:57 
+
+- [程序员就业前景](https://github.com/xuya227939/blog/issues/146) 			 2023-03-22 01:42:22 
+
+- [对数字孪生的理解](https://github.com/xuya227939/blog/issues/138) 			 2022-05-09 06:51:50 
 
 - [个人简历如何回答](https://github.com/xuya227939/blog/issues/141) 			 2022-09-21 02:48:17 
 
