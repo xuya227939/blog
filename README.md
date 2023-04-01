@@ -1,13 +1,13 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2023-03-31 00:05:08
+> 上次更新: 2023-04-01 00:05:05
     
 共 [20](https://github.com/xuya227939/blog/labels) 个标签, [107](https://github.com/xuya227939/blog/issues) 篇博文
 ## 最新 
 - [win node-sass 安装失败](https://github.com/xuya227939/blog/issues/147) 			 2023-03-24 07:34:18 
 
-- [程序员就业前景](https://github.com/xuya227939/blog/issues/146) 			 2023-03-22 01:42:22 
+- [聊聊我对前端已死的看法](https://github.com/xuya227939/blog/issues/146) 			 2023-03-22 01:42:22 
 
 - [个人简历如何回答](https://github.com/xuya227939/blog/issues/141) 			 2022-09-21 02:48:17 
 
@@ -252,7 +252,7 @@
 
 - [Webpack4 性能优化实践](https://github.com/xuya227939/blog/issues/108) 			 2020-11-07 07:47:57 
 
-- [程序员就业前景](https://github.com/xuya227939/blog/issues/146) 			 2023-03-22 01:42:22 
+- [聊聊我对前端已死的看法](https://github.com/xuya227939/blog/issues/146) 			 2023-03-22 01:42:22 
 
 - [对数字孪生的理解](https://github.com/xuya227939/blog/issues/138) 			 2022-05-09 06:51:50 
 
