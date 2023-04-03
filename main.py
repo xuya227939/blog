@@ -98,16 +98,26 @@ def format_issue_with_labels(issue: Issue):
 
 
 def bundle_new_created_section():
+    # global blog
+
+    # new_5_created_issues = blog.get_issues()[:5]
+
+    # new_created_section = '## 最新 \n'
+
+    # for issue in new_5_created_issues:
+    #     new_created_section += format_issue_with_labels(issue)
+
+    # return new_created_section
     global blog
 
-    new_5_created_issues = blog.get_issues()[:5]
+    all_created_issues = blog.get_issues()
 
-    new_created_section = '## 最新 \n'
+    all_created_section = '## 所有 \n'
 
-    for issue in new_5_created_issues:
-        new_created_section += format_issue_with_labels(issue)
+    for issue in all_created_issues:
+        all_created_section += format_issue_with_labels(issue)
 
-    return new_created_section
+    return all_created_section
 
 
 def bundle_list_by_labels_section():
@@ -151,11 +161,12 @@ def execute():
     print(new_created_section)
 
     # 5. list by labels section
-    list_by_labels_section = bundle_list_by_labels_section()
-    print(list_by_labels_section)
+    # list_by_labels_section = bundle_list_by_labels_section()
+    # print(list_by_labels_section)
 
     # 6. test
-    contents = [summary_section, new_created_section, list_by_labels_section]
+    # contents = [summary_section, new_created_section, list_by_labels_section]
+    contents = [summary_section, new_created_section]
     update_readme_md_file(contents)
 
     print('README.md updated successfully!!!')
