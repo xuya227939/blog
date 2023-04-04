@@ -1,1 +1,13 @@
-theme: jekyll-theme-cayman
+江辰:
+[图片]
+
+江辰:
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+title: [江辰博客]
+logo: /assets/img/logo.png
+description: [分享技术，日常，思考，人生]
+
+google_analytics: [UA-144561642-1]
