@@ -21,6 +21,7 @@ jobs:
       - run: echo 'done'
 workflows:
   version: 2
+  scheduled-workflow:
     triggers:
       - schedule:
           cron: "0 0 * * *"
