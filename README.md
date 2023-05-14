@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2023-05-13 00:05:17
+> 上次更新: 2023-05-14 00:05:17
     
-共 [20](https://github.com/xuya227939/blog/labels) 个标签, [111](https://github.com/xuya227939/blog/issues) 篇博文
+共 [20](https://github.com/xuya227939/blog/labels) 个标签, [112](https://github.com/xuya227939/blog/issues) 篇博文
 ## 所有 
+- [聊聊特斯拉使用感受](https://github.com/xuya227939/blog/issues/152) 			 2023-05-13 14:22:46 
+
 - [入职网易是种什么体验](https://github.com/xuya227939/blog/issues/151) 			 2023-05-04 05:55:26 
 
 - [EventSource 引发的一系列事件](https://github.com/xuya227939/blog/issues/150) 			 2023-04-25 08:51:18 
