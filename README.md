@@ -1,9 +1,9 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2023-09-07 00:05:25
+> 上次更新: 2023-09-08 00:05:16
     
-共 [20](https://github.com/xuya227939/blog/labels) 个标签, [125](https://github.com/xuya227939/blog/issues) 篇博文
+共 [20](https://github.com/xuya227939/blog/labels) 个标签, [113](https://github.com/xuya227939/blog/issues) 篇博文
 ## 所有 
 - [2023年中前端面试真题之编码篇](https://github.com/xuya227939/blog/issues/166) 			 2023-09-03 14:28:52 
 
@@ -18,8 +18,6 @@
 - [2023年中前端面试真题之JS篇](https://github.com/xuya227939/blog/issues/161) 			 2023-09-01 08:06:47 
 
 - [强烈推荐收藏的前端学习资源](https://github.com/xuya227939/blog/issues/160) 			 2023-08-29 15:51:55 
-
-- [聊聊植发手术](https://github.com/xuya227939/blog/issues/158) 			 2023-07-11 12:57:28 
 
 - [【深入浅出全栈开发】前端框架之核心概念](https://github.com/xuya227939/blog/issues/157) 			 2023-06-18 13:47:34 
 
@@ -45,10 +43,6 @@
 
 - [聊聊我对前端已死的看法](https://github.com/xuya227939/blog/issues/146) 			 2023-03-22 01:42:22 
 
-- [个人简历如何回答](https://github.com/xuya227939/blog/issues/141) 			 2022-09-21 02:48:17 
-
-- [下份工作更加关注的地方](https://github.com/xuya227939/blog/issues/140) 			 2022-09-21 02:46:55 
-
 - [大厂面试题](https://github.com/xuya227939/blog/issues/139) 			 2022-09-21 02:44:44 
 
 - [对数字孪生的理解](https://github.com/xuya227939/blog/issues/138) 			 2022-05-09 06:51:50 
@@ -61,35 +55,21 @@
 
 - [5年经验(专升本)入职B站分享](https://github.com/xuya227939/blog/issues/134) 			 2022-03-19 04:25:23 
 
-- [Pnpm](https://github.com/xuya227939/blog/issues/133) 			 2022-02-23 01:22:36 
-
-- [Webpack5 新特性](https://github.com/xuya227939/blog/issues/132) 			 2022-02-23 01:22:02 
-
-- [Vite 原理](https://github.com/xuya227939/blog/issues/131) 			 2022-02-23 01:21:41 
-
-- [微信小程序原理](https://github.com/xuya227939/blog/issues/130) 			 2022-02-23 01:21:27 
-
-- [Taro 原理](https://github.com/xuya227939/blog/issues/129) 			 2022-02-22 10:25:11 
-
 - [微信小程序 web-view 问题讨论](https://github.com/xuya227939/blog/issues/128) 			 2021-10-14 04:51:25 
 
 - [检测浏览器刷新还是退出代码](https://github.com/xuya227939/blog/issues/127) 			 2021-09-27 07:17:23 
 
 - [微信小程序 web-view 下渲染 cover-view，文字消失](https://github.com/xuya227939/blog/issues/126) 			 2021-09-26 03:16:37 
 
-- [甜新前端工程化探索之路](https://github.com/xuya227939/blog/issues/125) 			 2021-08-15 10:23:03 
-
 - [企业微信自建应用](https://github.com/xuya227939/blog/issues/124) 			 2021-07-18 06:58:23 
 
 - [MacBook Pro 外接显示屏开启 HiDPI](https://github.com/xuya227939/blog/issues/123) 			 2021-06-25 11:29:35 
-
-- [国行 Xbox Series X 深度体验](https://github.com/xuya227939/blog/issues/122) 			 2021-06-18 18:36:38 
 
 - [Webpack 如何配置代理？](https://github.com/xuya227939/blog/issues/121) 			 2021-06-10 01:22:49 
 
 - [配置多入口 Webpack 热更新失效？](https://github.com/xuya227939/blog/issues/120) 			 2021-05-20 03:01:36 
 
-- [我是如何突围传统行业的？](https://github.com/xuya227939/blog/issues/119) 			 2021-05-03 00:48:45 
+- [如何搭建前端架构和团队体系](https://github.com/xuya227939/blog/issues/119) 			 2021-05-03 00:48:45 
 
 - [4 年前端如何选择方向](https://github.com/xuya227939/blog/issues/118) 			 2021-04-28 05:45:28 
 
@@ -123,8 +103,6 @@
 
 - [如何基于tristana项目模板，打造一个基本列表展示](https://github.com/xuya227939/blog/issues/100) 			 2020-06-17 02:28:49 
 
-- [如何基于lucian项目模板，打造一个基本列表展示](https://github.com/xuya227939/blog/issues/99) 			 2020-06-17 02:27:46 
-
 - [基于 Taro 实现签字，轨迹回放](https://github.com/xuya227939/blog/issues/98) 			 2020-06-16 06:02:18 
 
 - [Webpack 如何配置热更新](https://github.com/xuya227939/blog/issues/96) 			 2020-05-20 10:23:46 
@@ -140,8 +118,6 @@
 - [解决canvas，toDataURL跨域问题](https://github.com/xuya227939/blog/issues/91) 			 2020-04-05 15:03:45 
 
 - [解决PDF.js转Canvas图片，toDataURL空白问题](https://github.com/xuya227939/blog/issues/90) 			 2020-04-04 08:19:30 
-
-- [基于React、Redux、Webpack 和 React-Router的项目模板。](https://github.com/xuya227939/blog/issues/89) 			 2020-02-13 14:42:25 
 
 - [基于React、Mobx、Webpack 和 React-Router的项目模板。](https://github.com/xuya227939/blog/issues/88) 			 2020-02-09 08:09:49 
 
