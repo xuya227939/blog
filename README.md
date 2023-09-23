@@ -1,7 +1,7 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2023-09-22 00:05:22
+> 上次更新: 2023-09-23 00:05:36
     
 共 [20](https://github.com/xuya227939/blog/labels) 个标签, [112](https://github.com/xuya227939/blog/issues) 篇博文
 ## 所有 
@@ -35,7 +35,7 @@
 
 - [Win CMD 常用命令](https://github.com/xuya227939/blog/issues/149) 			 2023-04-04 07:42:42 
 
-- [一年过去了，哪个专升本进入B站的人咋样了？](https://github.com/xuya227939/blog/issues/148) 			 2023-04-02 13:18:55 
+- [被B站裁员后，我思考了那些](https://github.com/xuya227939/blog/issues/148) 			 2023-04-02 13:18:55 
 
 - [win node-sass 安装失败](https://github.com/xuya227939/blog/issues/147) 			 2023-03-24 07:34:18 
 
@@ -51,7 +51,7 @@
 
 - [React Router v6 探索](https://github.com/xuya227939/blog/issues/135) 			 2022-03-27 17:11:58 
 
-- [5年经验(专升本)入职B站分享](https://github.com/xuya227939/blog/issues/134) 			 2022-03-19 04:25:23 
+- [专科如何进入互联网大厂](https://github.com/xuya227939/blog/issues/134) 			 2022-03-19 04:25:23 
 
 - [微信小程序 web-view 问题讨论](https://github.com/xuya227939/blog/issues/128) 			 2021-10-14 04:51:25 
 
