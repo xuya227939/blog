@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2023-12-16 00:05:20
+> 上次更新: 2023-12-17 00:05:23
     
-共 [20](https://github.com/xuya227939/blog/labels) 个标签, [117](https://github.com/xuya227939/blog/issues) 篇博文
+共 [20](https://github.com/xuya227939/blog/labels) 个标签, [118](https://github.com/xuya227939/blog/issues) 篇博文
 ## 所有 
+- [搭建自托管密码管理器](https://github.com/xuya227939/blog/issues/174) 			 2023-12-16 11:43:49+00:00 
+
 - [【深入浅出全栈开发】网站 SEO 提升](https://github.com/xuya227939/blog/issues/173) 			 2023-10-20 10:36:57+00:00 
 
 - [pm2 The "data" argument must be of type string or an instance of Buffer 问题排查](https://github.com/xuya227939/blog/issues/172) 			 2023-10-15 14:54:13+00:00 
