@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2024-03-03 00:05:29
+> 上次更新: 2024-03-04 00:05:24
     
-共 [20](https://github.com/xuya227939/blog/labels) 个标签, [119](https://github.com/xuya227939/blog/issues) 篇博文
+共 [20](https://github.com/xuya227939/blog/labels) 个标签, [120](https://github.com/xuya227939/blog/issues) 篇博文
 ## 所有 
+- [【软件工程管理】技术负债](https://github.com/xuya227939/blog/issues/176) 			 2024-03-03 07:49:22+00:00 
+
 - [【鸿蒙开发三部曲】第一部-环境搭建](https://github.com/xuya227939/blog/issues/175) 			 2023-12-17 13:51:05+00:00 
 
 - [搭建自托管密码管理器](https://github.com/xuya227939/blog/issues/174) 			 2023-12-16 11:43:49+00:00 
