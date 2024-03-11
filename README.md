@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2024-03-10 00:05:20
+> 上次更新: 2024-03-11 00:05:31
     
-共 [20](https://github.com/xuya227939/blog/labels) 个标签, [120](https://github.com/xuya227939/blog/issues) 篇博文
+共 [20](https://github.com/xuya227939/blog/labels) 个标签, [121](https://github.com/xuya227939/blog/issues) 篇博文
 ## 所有 
+- [toB开发范式](https://github.com/xuya227939/blog/issues/177) 			 2024-03-10 09:46:39+00:00 
+
 - [【软件工程管理】技术负债](https://github.com/xuya227939/blog/issues/176) 			 2024-03-03 07:49:22+00:00 
 
 - [【鸿蒙开发三部曲】第一部-环境搭建](https://github.com/xuya227939/blog/issues/175) 			 2023-12-17 13:51:05+00:00 
