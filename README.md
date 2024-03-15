@@ -1,10 +1,12 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2024-03-14 00:05:22
+> 上次更新: 2024-03-15 00:05:27
     
-共 [20](https://github.com/xuya227939/blog/labels) 个标签, [121](https://github.com/xuya227939/blog/issues) 篇博文
+共 [20](https://github.com/xuya227939/blog/labels) 个标签, [122](https://github.com/xuya227939/blog/issues) 篇博文
 ## 所有 
+- [Ubuntu 下安装 wechat](https://github.com/xuya227939/blog/issues/178) 			 2024-03-14 08:50:19+00:00 
+
 - [toB开发范式](https://github.com/xuya227939/blog/issues/177) 			 2024-03-10 09:46:39+00:00 
 
 - [【软件工程管理】技术负债](https://github.com/xuya227939/blog/issues/176) 			 2024-03-03 07:49:22+00:00 
