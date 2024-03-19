@@ -1,11 +1,11 @@
 
 # GitHub Issues Blog
     
-> 上次更新: 2024-03-18 00:05:23
+> 上次更新: 2024-03-19 00:05:17
     
 共 [20](https://github.com/xuya227939/blog/labels) 个标签, [122](https://github.com/xuya227939/blog/issues) 篇博文
 ## 所有 
-- [Ubuntu 下安装 wechat](https://github.com/xuya227939/blog/issues/178) 			 2024-03-14 08:50:19+00:00 
+- [Ubuntu 下安装 WeChat](https://github.com/xuya227939/blog/issues/178) 			 2024-03-14 08:50:19+00:00 
 
 - [toB开发范式](https://github.com/xuya227939/blog/issues/177) 			 2024-03-10 09:46:39+00:00 
 
