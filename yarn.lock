@@ -1374,9 +1374,9 @@ astro-seo@^0.8.0:
   dependencies:
     "@astrojs/check" "^0.5.4"
 
-astro@^4.5.9:
+astro@^4.5.12:
   version "4.5.12"
-  resolved "https://r.cnpmjs.org/astro/-/astro-4.5.12.tgz#ffa3f6a43d051ee6fc71030a9d728d4ca8945831"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-4.5.12.tgz#ffa3f6a43d051ee6fc71030a9d728d4ca8945831"
   integrity sha512-xIJcFI2hbyV8+h5pWjL7SKD1jIP0K01fYVAH+gdAt0mJaXy+u8Mj+goD0cPlK6sEaykR+7zxQLYGKJ44U4qarg==
   dependencies:
     "@astrojs/compiler" "^2.7.0"
