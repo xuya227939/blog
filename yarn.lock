@@ -23,18 +23,7 @@
   resolved "https://r.cnpmjs.org/@antfu/utils/-/utils-0.7.7.tgz#26ea493a831b4f3a85475e7157be02fb4eab51fb"
   integrity sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==
 
-"@astrojs/check@^0.3.4":
-  version "0.3.4"
-  resolved "https://r.cnpmjs.org/@astrojs/check/-/check-0.3.4.tgz#b09d04f50570b4f579e336a30e7237ee9fd839bf"
-  integrity sha512-Wi4KwW38J3GCd/U6LH2UuU4uc4P/K1WYaqhoKm2o7rVoGhQfO+RWrSO26rUPRXYbmae8JugAgpCmsHC8bt5RlA==
-  dependencies:
-    "@astrojs/language-server" "^2.5.5"
-    chokidar "^3.5.3"
-    fast-glob "^3.3.1"
-    kleur "^4.1.5"
-    yargs "^17.7.2"
-
-"@astrojs/check@^0.5.4":
+"@astrojs/check@^0.5.10", "@astrojs/check@^0.5.4":
   version "0.5.10"
   resolved "https://r.cnpmjs.org/@astrojs/check/-/check-0.5.10.tgz#1e6aa4d2392bb34ae9938f894b6765bd858363b4"
   integrity sha512-vliHXM9cu/viGeKiksUM4mXfO816ohWtawTl2ADPgTsd4nUMjFiyAl7xFZhF34yy4hq4qf7jvK1F2PlR3b5I5w==
@@ -55,7 +44,7 @@
   resolved "https://r.cnpmjs.org/@astrojs/internal-helpers/-/internal-helpers-0.4.0.tgz#4fd45cee40b8278c77ed64167970c401ccfe792b"
   integrity sha512-6B13lz5n6BrbTqCTwhXjJXuR1sqiX/H6rTxzlXx+lN1NnV4jgnq/KJldCQaUWJzPL5SiWahQyinxAbxQtwgPHA==
 
-"@astrojs/language-server@^2.5.5", "@astrojs/language-server@^2.8.4":
+"@astrojs/language-server@^2.8.4":
   version "2.8.4"
   resolved "https://r.cnpmjs.org/@astrojs/language-server/-/language-server-2.8.4.tgz#917d3c08c152d6a30a893cb0d68e1aa0cb5fc0a7"
   integrity sha512-sJH5vGTBkhgA8+hdhzX78UUp4cFz4Mt7xkEkevD188OS5bDMkaue6hK+dtXWM47mnrXFveXA2u38K7S+5+IRjA==
