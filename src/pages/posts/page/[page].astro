@@ -1,0 +1,41 @@
+---
+import LayoutDefault from '~/layouts/LayoutDefault.astro'
+import Post from '~/components/Post.astro'
+import Pagination from '~/components/Pagination.astro'
+import { getPosts, getPostDescription } from '~/utils'
+import type { InferGetStaticPropsType, GetStaticPaths } from 'astro'
+
+const { translate: t } = Astro.locals
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const posts = await getPosts()
+  return paginate(posts, { pageSize: 5 })
+}) satisfies GetStaticPaths
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
+
+const { page } = Astro.props
+---
+
+<LayoutDefault>
+  <section contain-layout un-flex="~ col gap-7.5">
+    {
+      page.data.map((post) => (
+        <Post post={post}>
+          <p class="line-clamp-4">{getPostDescription(post)}</p>
+        </Post>
+      ))
+    }
+
+    <Pagination
+      showLeft={Boolean(page.url.prev)}
+      leftTitle={t('prev')}
+      leftUrl={page.url.prev}
+      showRight={Boolean(page.url.next)}
+      rightTitle={t('next')}
+      rightUrl={page.url.next}
+      currentPage={page.currentPage}
+      totalPage={page.lastPage}
+    />
+  </section>
+</LayoutDefault>

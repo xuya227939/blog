@@ -7,18 +7,18 @@ jobs:
     steps:
       - checkout
       # Run python script
-      - run: pip install PyGithub --user
-      - run: python main.py
-      - run: git version
-      - run: git status
-      - run: git config --global user.email $GITHUB_MAIL
-      - run: git config --global user.name $GITHUB_USER
-      - run: git checkout main
-      - run: git pull origin main
-      - run: git add .
-      - run: git commit -m "Update From Circle CI"
-      - run: git push origin
-      - run: echo 'done'
+      # - run: pip install PyGithub --user
+      # - run: python main.py
+      # - run: git version
+      # - run: git status
+      # - run: git config --global user.email $GITHUB_MAIL
+      # - run: git config --global user.name $GITHUB_USER
+      # - run: git checkout main
+      # - run: git pull origin main
+      # - run: git add .
+      # - run: git commit -m "Update From Circle CI"
+      # - run: git push origin
+      # - run: echo 'done'
 workflows:
   version: 2
   scheduled-workflow:

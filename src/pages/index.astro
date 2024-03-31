@@ -1,0 +1,24 @@
+---
+import LayoutDefault from '~/layouts/LayoutDefault.astro'
+import Post from '~/components/Post.astro'
+import { getPosts, getPostDescription } from '~/utils'
+import Pagination from '~/components/Pagination.astro'
+
+const posts = (await getPosts()).slice(0, 5)
+
+const { translate: t } = Astro.locals
+
+---
+
+<LayoutDefault>
+  <section contain-layout un-flex="~ col gap-7.5">
+    {
+      posts.map((post) => (
+        <Post post={post}>
+          <p class="line-clamp-4">{getPostDescription(post)}</p>
+        </Post>
+      ))
+    }
+    <Pagination showLeft={false} showPageCount={false} rightTitle={t('all_posts')} rightUrl={'posts/page/1'} />
+  </section>
+</LayoutDefault>
