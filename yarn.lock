@@ -1118,10 +1118,15 @@
     "@unocss/preset-mini" "0.58.8"
     "@unocss/rule-utils" "0.58.8"
 
-"@unocss/reset@0.58.8", "@unocss/reset@^0.58.5":
+"@unocss/reset@0.58.8":
   version "0.58.8"
   resolved "https://r.cnpmjs.org/@unocss/reset/-/reset-0.58.8.tgz#70f408bc4eaa41f58a1ea34c4aeb4eedae0b80bd"
   integrity sha512-6Cz92Ryer7QpFhxnOwyauwVJfDGhCNYvLHGqW8ScIicFEPK9AUXYys/zBRCIYO2489/kckZ5EG8a3NImS5h+9w==
+
+"@unocss/reset@^0.59.0":
+  version "0.59.0"
+  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.59.0.tgz#438bcdc198092947cdb5c20e1498d2f7ef51b830"
+  integrity sha512-9f5DYoaqzlaFz2fAzAJOXWZ41Qmgg4u9WdzMQ7SYALeEq61khScaSrf8osNTKFZuRLKPWYwX6JErzdAkfIH/6A==
 
 "@unocss/rule-utils@0.58.8":
   version "0.58.8"
