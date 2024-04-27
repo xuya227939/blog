@@ -1,90 +1,61 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: Win CMD 常用命令
+pubDate: 2023-04-04 15:42:42
+categories: ["Win", "CMD"]
 description: ""
 ---
 
-## 介绍
+### 查看进程号
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+1. 输入端口查看
 
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+输入端口号，如 8080，查看对应得 pid 号
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+ netstat -aon | findstr 8080
 ```
 
-## 使用
-
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+2. 输入服务查看
 
 ```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
+tasklist | findstr nginx
 ```
 
-2.引用官方代码，修改 App.css
+### 杀掉进程
+
+[/F] 强制删除
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+taskkill /F /pid 17416
 ```
 
-你就可以看到蓝色的按钮了。
+### Nginx 启动命令
 
-## 问题处理
+找到 Nginx 安装目录
 
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
+```
+start .\nginx.exe
+```
 
-## 结语
+### Nginx 停止命令
 
-react 入门，首先从搭建 react 开始。
+找到 Nginx 安装目录
+
+```
+ .\nginx.exe -s stop
+```
+
+### 文件夹无法删除
+
+![image](https://user-images.githubusercontent.com/16217324/229761007-84dd0cce-6cef-4ec3-a213-fb78d14a51e2.png)
+
+比如这种文件夹无法删除，提示需要管理员权限或要删除得文件夹不存在
+
+通过新建记事本
+
+```
+DEL /F /A /Q \\?\%1
+RD /S /Q \\?\%1
+```
+
+另存为 `del.bat` 可执行文件，通过把要删除得项目，拖拽到可执行文件中，即可删除

@@ -1,6 +1,6 @@
 ---
 title: JS 实现斐波那契数列
-pubDate: 2018-07-16 11:05:07-JS
+pubDate: 2018-07-16 11:05:07
 categories: ["JS"]
 description: ""
 ---

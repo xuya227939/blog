@@ -1,90 +1,157 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: Webpack 如何配置热更新
+pubDate: 2020-05-20 18:23:46
+categories: ["Webpack"]
 description: ""
 ---
 
-## 介绍
+## 什么是 HMR
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+是指 `Hot Module Replacement`，缩写为 `HMR`。对于你需要更新的模块，进行一个"热"替换，所谓的热替换是指在不需要刷新页面的情况下，对某个改动进行无缝更新。如果你没有配置 `HMR`，那么你每次改动，都需要刷新页面，才能看到改动之后的结果，对于调试来说，非常麻烦，而且效率不高，最关键的是，你在界面上修改的数据，随着刷新页面会丢失，而如果有类似 `Webpack` 热更新的机制存在，那么，则是修改了代码，不会导致刷新，而是保留现有的数据状态，只将模块进行更新替换。也就是说，既保留了现有的数据状态，又能看到代码修改后的变化。
 
-## 例子
+总结：
 
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
+- 加载页面时保存应用程序状态
+- 只更新改变的内容，节省调试时间
+- 修改样式更快，几乎等同于在浏览器中更改样式
 
-## 安装
-
-```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
-```
-
-## 使用
-
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+## 安装依赖
 
 ```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
+$ npm install webpack webpack-dev-server --save-dev
 ```
 
-2.引用官方代码，修改 App.css
+`package.json`：
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
+"dependencies": {
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.10.1"
+},
+```
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+## 配置
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+`webpack`:
 
-.App-title {
-  font-size: 1.5em;
-}
+```
+devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    hot: true,
+    historyApiFallback: true,
+    compress: true
+},
+```
 
-.App-intro {
-  font-size: large;
-}
+- `hot` 为 `true`，代表开启热更新
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+- `contentBase` 表示告诉服务器从哪里提供内容。（也就是服务器启动的根目录，默认为当前执行目录，一般不需要设置）
+
+- `historyApiFallback` 使用 `HTML5` 历史记录 `API` 时，`index.html` 很可能必须提供该页面来代替任何 404 响应
+
+- `compress` 对所有服务启用 `gzip` 压缩
+
+```
+plugins: {
+    HotModuleReplacementPlugin: new webpack.HotModuleReplacementPlugin()
+},
+```
+
+配置热更新插件
+
+```
+module: {
+    rules: [
+        {
+            test: /\.(css|less)$/,
+            use: [
+                process.env.NODE_ENV == 'development' ? { loader: 'style-loader' } : MiniCssExtractPlugin.loader,
+                {
+                    loader: 'css-loader',
+                    options: {
+                        importLoaders: 1
+                    }
+                }
+            ]
+        }
+    ]
+},
+```
+
+`style-loader` 库实现了 `HMR` 接口，当通过 `HMR` 收到更新时，它将用新样式替换旧样式。区分开发环境和生产环境，用不同 `loader。`
+
+`src/index.jsx`：
+
+```
+if (module.hot) {
+    module.hot.accept();
 }
 ```
 
-你就可以看到蓝色的按钮了。
+入口文件，新增上面代码，就可以了，非常简单。
 
-## 问题处理
+## react-hot-loader
 
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
+`react-hot-loader` 插件，[传送门](https://github.com/gaearon/react-hot-loader)
 
-## 结语
+### 如何使用
 
-react 入门，首先从搭建 react 开始。
+安装
+
+```
+$ npm install react-hot-loader --save-dev
+```
+
+配置 `babelrc`
+
+```
+{
+  "plugins": ["react-hot-loader/babel"]
+}
+```
+
+将根组件标记为热导出
+
+```
+import { hot } from 'react-hot-loader/root';
+const App = () => <div>Hello World!</div>;
+export default hot(App);
+```
+
+在 `React` 和 `React Dom` 之前，确保需要 `React` 热加载程序
+
+```
+// webpack.config.js
+module.exports = {
+  entry: ['react-hot-loader/patch', './src'],
+  // ...
+};
+```
+
+### 遇到问题
+
+- 如果遇到 `You cannot change <Router history>` ，那么应该这样配置：
+
+```
+import { hot } from 'react-hot-loader/root';
+const Routes = () => {};
+export default hot(Routes);
+```
+
+- 配置完热更新之后，遇到`webpack`自动编译两次问题，很大概率出现，具体原因，没有分析，找到一个讨巧的解决办法，配置：
+
+```
+watchOptions: {
+    aggregateTimeout: 600
+},
+```
+
+也有可能是其他问题，比如你在`index.html`页面，重复引入了`index.js`，又或者是全局安装了`webpack-dev-server`，与本地`webpack-dev-server`重复，卸载全局`webpack-dev-server`，即可。
+
+## 案例
+
+[Tristana](https://github.com/xuya227939/tristana)
+
+## 博客
+
+欢迎关注我的[博客](https://github.com/xuya227939/LiuJiang-Blog)

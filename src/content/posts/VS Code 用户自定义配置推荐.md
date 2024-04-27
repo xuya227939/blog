@@ -1,90 +1,70 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: VS Code 用户自定义配置推荐
+pubDate: 2019-05-07 10:31:15
+categories: ["VS Code"]
 description: ""
 ---
 
-## 介绍
-
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
-
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+## settings.json
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
-```
-
-## 使用
-
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
-
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-2.引用官方代码，修改 App.css
-
-```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+{
+    // 启用或禁用在 VS Code 中重命名或移动文件时自动更新 import 语句的路径
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // 禁止vscode的默认制表符
+    "editor.detectIndentation": false,
+    // 自动换行
+    "editor.wordWrap": "on",
+    // 字体大小
+    "editor.fontSize": 16,
+    // 选中糟糕的-
+    "editor.wordSeparators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
+    // 启用后，将不会显示扩展程序建议的通知。
+    "extensions.ignoreRecommendations": true,
+    // 关闭默认的js验证，js中使用flow或ts语法会报错，需要关闭
+    "javascript.validate.enable": false,
+    "fileheader.Author": "Jiang",
+    "fileheader.LastModifiedBy": "Jiang",
+    "files.associations": {
+        "*.wxml": "xml",
+        "*.wxss": "css",
+        "*.cjson": "jsonc",
+        "*.wxs": "javascript"
+    },
+    "eslint.trace.server": "messages",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "emmet.includeLanguages": {
+        "wxml": "html"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "michelemelluso.code-beautifier"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "vscode-icons",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
 }
 ```
-
-你就可以看到蓝色的按钮了。
-
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。

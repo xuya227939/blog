@@ -1,90 +1,67 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: Webpack 如何配置代理
+pubDate: 2021-06-10 09:22:49
+categories: ["Webpakc"]
 description: ""
 ---
 
-## 介绍
+## 前言
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+`Webpack` 提供的 `devServer` 配置，使我们可以非常方便的设置请求代理目标，通过改配置，有时候可以帮我们解决本地环境的跨域问题。
 
-## 例子
+## 正向代理
 
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
+当拥有单独的 `API` 后端开发服务器并且希望在同一域上发送 `API` 请求时，代理某些 `URL` 可能会很有用。
 
-## 安装
-
-```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
-```
-
-## 使用
-
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+webpack.dev.js
 
 ```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
+devServer: {
+    // ...
+    proxy: {
+        '/api2': {
+            target: 'http://192.168.10.183:8103',
+            changeOrigin: true
+        }
+    }
+},
 ```
 
-2.引用官方代码，修改 App.css
+axios：
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+axios({
+    baseURL: '/api2/',
+    url: '/user/login',
+    method: 'GET'
+})
 ```
 
-你就可以看到蓝色的按钮了。
+配置 `proxy`，本地环境中的请求，以 `/api` 开头的，都会把请求代理转发到 `target` 目标中，但是在浏览器中查看 `network`，发现请求依旧没有改变，实际上可以看到控制台打印或看后端 `log`，请求已经转发。
 
-## 问题处理
+![image](https://user-images.githubusercontent.com/16217324/122594087-24265e00-d099-11eb-974c-b46412e4c127.png)
 
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
+`proxy`，仅针对本地环境有效，对线上环境无效，一般线上环境是通过 `Nginx` 做转发。
 
-## 结语
+## 反向代理
 
-react 入门，首先从搭建 react 开始。
+当需要对域名进行校验，比如企业微信或微信公众号的一些可信域名配置，需要通过域名来访问，会非常有用。
+
+编辑你的本地 hosts，是本地转发到指定域名，这里不要带端口号，如果有端口号，输入域名的时候，带上端口号。
+
+```
+127.0.0.1	order.downfuture.com
+```
+
+![B A CLATTE zsx-test ikandy cn8080commonIndex html#userlogin](https://user-images.githubusercontent.com/16217324/122594621-d3fbcb80-d099-11eb-9e61-08a44d01ea6b.png)
+
+如果访问报这个错误，需要在
+
+```
+devServer: {
+    // ...
+    disableHostCheck: true
+},
+```
+
+配置完之后，本地启动开发服务，输入域名和端口号跳转页面，则可以看到修改了，受缓存影响，最好用无痕浏览器噢。
