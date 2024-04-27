@@ -1,90 +1,99 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
+title: React 如何进行上传图片
+pubDate: 2018-06-15 16:16:03
 categories: ["React"]
 description: ""
 ---
 
-## 介绍
-
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
-
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+## 标签
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+<input
+ id="upload-file"
+ accept="image/*"
+ type="file"
+ ref="upload"
+ hidden="hidden"
+ onChange={this.upload.bind(this, 1)}
+/>
 ```
 
-## 使用
+`input` //标签的 type 设置为 file 属性
+`accept` //属性，支持很多类型，这里设置为只上传图片
+`hidden` //隐藏文字，做下面这种效果的时候，就需要隐藏文字。
+![image](https://user-images.githubusercontent.com/16217324/41458033-0f9a7d52-70b8-11e8-9037-ca6443298f97.png)
+onChange //上传完成后的回调
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
-
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-2.引用官方代码，修改 App.css
+## JS 代码
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+upload() {
+    let files;
+    files = this.refs.upload.files
+    let count = files.length;
+    let formData = new FormData();
+    for (let i = 0; i < count; i++) {
+        files[i].thumb = URL.createObjectURL(files[i]);
+        formData.append('filedata', files[i]);
+    }
 }
 ```
 
-你就可以看到蓝色的按钮了。
+这里主要是通过 `this.refs.upload`来获取上传之后的文件，然后通过`createObjectURL` 静态方法创建一个 `DOMString`(mac 测试通过 input 上传过来`webkitRelativePath` 是空的)，然后追加进 formData。再通过`send(body: formData)`方法传进后端
 
-## 问题处理
+## 后端
 
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
+```
+const express = require('express');
+const multiparty = require('multiparty');
+const gm = require('gm').subClass({
+    imageMagick: true
+});
+const fs = require('fs');
+router.put(`uploadImages`, function (req, res) {
+    let datas = {};
+    if (!(fs.existsSync('./images/'))) {
+        fs.mkdir('./images/', function (err, status) {
 
-## 结语
+        });
+    }
+    const form = new multiparty.Form({
+        uploadDir: './images/'
+    });
+    form.parse(req, function (err, fields, files) {
+        const filesTmp = files.filedata;
+        if (err) {
+            throw err;
+        } else {
+            const relPath = filesTmp;
+            for (let i in relPath) {
+                gm(relPath[i].path)
+                    .resize(240, 240)
+                    .noProfile()
+                    .write(relPath[i].path, function (err, data) {
+                        if (err) {
+                            throw err;
+                        }
+                        console.log(data);
+                    });
+            }
+        }
+    });
+});
+```
 
-react 入门，首先从搭建 react 开始。
+后端用的是 node.js，express 框架。fs 模块，来进行判断是否存在该文件夹，如果不存在，则创建。
+`fs.existsSync()` 返回值为 true or false `fs.mkdir()` 创建文件夹 multiparty 模块来解析 form 表单
+gm 进行裁剪图片。
+
+## 错误处理
+
+1、`Error: unsupported content-type`
+
+这个错误是因为你的 content-type 设置错了，设置成`multipart/form-data`即可。
+
+2、设置完成之后，还是不行。
+去掉`headers`的设置
+`body: formData` //body 的内容为表单内容
+
+3、上传一次图片之后，无法上传第二次，是因为 value 此时有值，没有进行清空处理，在上传成功回调里，进行`e.target.value = '';`

@@ -1,90 +1,38 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: JS 运行机制类文章
+pubDate: 2018-09-29 14:51:02
+categories: ["JS"]
 description: ""
 ---
 
-## 介绍
+这一次，彻底弄懂 JavaScript 执行机制
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+https://juejin.im/post/59e85eebf265da430d571f89
 
-## 例子
+JavaScript 是如何工作的：在 V8 引擎里 5 个优化代码的技巧
 
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
+https://github.com/xitu/gold-miner/blob/master/TODO/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code.md
 
-## 安装
+JavaScript 是如何工作的：内存管理 + 处理常见的 4 种内存泄漏
 
-```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
-```
+https://github.com/xitu/gold-miner/blob/master/TODO/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks.md
 
-## 使用
+从浏览器多进程到 JS 单线程，JS 运行机制最全面的一次梳理 (值得反复阅读)
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+https://juejin.im/post/5a6547d0f265da3e283a1df7?utm_medium=fe&utm_source=weixinqun
 
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
+深入了解 JavaScript 引擎精华 (值得反复阅读)
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
+http://developer.51cto.com/art/201806/576835.htm
 
-export default App;
-```
+跟着 Event loop 规范理解浏览器中的异步机制
 
-2.引用官方代码，修改 App.css
+https://juejin.im/post/5b5873a1e51d4519133fbc35
 
-```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
+[译] JavaScript 是如何工作的：深入网络层 + 如何优化性能和安全
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+https://juejin.im/post/5b02ae48518825429d1f9aff?utm_medium=fe&utm_source=weixinqun
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+微任务和宏任务
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-```
-
-你就可以看到蓝色的按钮了。
-
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。
+https://juejin.im/entry/5b860983e51d4538980c22aa

@@ -1,90 +1,74 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: JS 数组扁平化之简单方法实现
+pubDate: 2019-09-10 10:14:20
+categories: ["JS"]
 description: ""
 ---
 
-## 介绍
+## 什么是扁平化
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+一句话解释，数组扁平化是指将一个多维数组(含嵌套)变为一维数组
 
-## 例子
+## 扁平化之 ES5
 
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+### toString
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+const arr = [1, 2, 3, [4, 5, [6, 7]]];
+
+const flatten = arr.toString().split(',');
+
+console.log(flatten);
 ```
 
-## 使用
+优点：简单，方便，对原数据没有影响
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+缺点：最好数组元素全是数字或字符，不会跳过空位
 
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-2.引用官方代码，修改 App.css
+### join
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
+const arr = [1, 2, 3, [4, 5, [6, 7]]];
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+const flatten = arr.join(',').split(',');
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+console.log(flatten);
 ```
 
-你就可以看到蓝色的按钮了。
+优点和缺点同 toString
 
-## 问题处理
+## 扁平化之 ES6
 
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
+### flat
 
-## 结语
+```
+const arr = [1, 2, 3, [4, 5, [6, 7]]];
 
-react 入门，首先从搭建 react 开始。
+const flatten = arr.flat(Infinity);
+
+console.log(flatten);
+```
+
+优点：会跳过空位，返回新数组，不会修改原数组。
+
+缺点：无
+
+### 扩展运算符(...)
+
+```
+const arr = [1, 2, 3, [4, 5]];
+
+console.log([].concat(...arr));
+```
+
+优点：简单，方便
+
+缺点：只能扁平化一层
+
+## 总结
+
+推荐使用 `ES6` 的 `flat` 方法
+
+## 博客
+
+[欢迎关注我的博客](https://github.com/xuya227939/LiuJiang-Blog)

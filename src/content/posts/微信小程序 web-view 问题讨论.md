@@ -1,90 +1,92 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: 微信小程序 web-view 问题讨论
+pubDate: 2021-10-14 12:51:25
+categories: ["微信小程序"]
 description: ""
 ---
 
-## 介绍
+大家好，我是江辰，这篇文章记录一次在真实的线上环境中，关于 web-view 的问题，大家可以跟随作者一起看看心路历程。
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+本文首发于微信公众号：野生程序猿江辰
 
-## 例子
+欢迎大家点赞，收藏，关注
 
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
+## 问题背景
 
-## 安装
+上半年最开始做的一版是展业大厅页面和互动白板页面（以下统称 `web-view`）分离，后面由于腾讯那边对交互方式不满意，强调一定要展业大厅页面和白板页面在同一个页面进行交互，最开始我们没有思路，因为在小程序官方中的描述，`web-view` 页面不允许叠加任何组件，后面是产品找到一个 demo，发现可以叠加，我这边去翻了下他们的源码（`renderingMode: 'seperated'`），最终解决了该问题，也就导致后面很多问题的产生。
 
-```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
-```
+## 现存问题
 
-## 使用
+### web-view 存在的情况
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+1. 安卓更新组件不生效，比如 tab 切换，tab1 切换到 tab2 ，不生效，内容不会更新
 
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
+2. 安卓更新图片不生效
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
+3. 安卓更新样式不生效
 
-export default App;
-```
+4. cover-view 文字消失
 
-2.引用官方代码，修改 App.css
+5. 按钮响应慢，机型性能低的手机比较明显
 
-```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
+针对问题 2，目前的 `hack` 方案，先渲染一张透明的图片，然后再渲染其他图片，可以生效
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+针对问题 1、2、3，仅在安卓端出现，苹果手机上没有发现，目前有一个比较 `hack` 的方案，通过卸载组件，重新渲染，可以达到目的，但是产生的性能损耗比较大，对交互体验不友好，而且也导致了第四点问题的产生
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+针对问题 4 安卓复现频率比较高，苹果出现过一次
 
-.App-title {
-  font-size: 1.5em;
-}
+针对问题 5 安卓跟苹果都存在
 
-.App-intro {
-  font-size: large;
-}
+### web-view 不存在的情况
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-```
+都正常
 
-你就可以看到蓝色的按钮了。
+## 尝试过的方案
 
-## 问题处理
+针对 `cover-view` 文字消失
 
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
+- 设置组件宽高
+- 设置字体颜色和背景颜色
+- 刷新
 
-## 结语
+以上方案，都不行，也没法在开发者工具上查看 `DOM` 视图
 
-react 入门，首先从搭建 react 开始。
+### Console
+
+![](https://files.mdnice.com/user/27515/4d21dadd-b397-4e38-87b4-a71e18369ee5.jpeg)
+
+元素的宽高都在，偏移位置也正常，就是文字消失
+
+### DOM
+
+![](https://files.mdnice.com/user/27515/e7d6cc0c-c02d-4978-bcf4-2ae87595f5d2.png)
+
+无法在开发者工具上查看 DOM 视图
+
+## 现象
+
+### 正常
+
+![](https://files.mdnice.com/user/27515/dfbeb70c-5e83-4c77-91e1-b337d1c4a3d7.jpeg)
+
+### 文字消失
+
+![](https://files.mdnice.com/user/27515/e3a76308-5456-482d-831a-6d03779ecb23.jpeg)
+
+这个元素的宽高都在，就是文字消失
+
+## 微信小程序架构图
+
+![](https://files.mdnice.com/user/27515/900a15d9-7bac-4aee-8ce4-1148bfac3851.jpeg)
+
+## 展业小程序架构图
+
+![](https://files.mdnice.com/user/27515/4a20f41d-6dac-4117-b641-2b990f975fe3.png)
+
+## 解决方案
+
+- 所有人的视频流不再全部获取，而是只显示四路视频流，其他人员要显示，在成员列表进行切换显示
+
+- 重点⼯作中花费精⼒最多的是模块化解耦的重构、我简单说下背景。因为之前我们代码共建的、 但是因为客户这边定制化的需求有很多，并且不是那么简单的能⽤抽象的⽅式把这些⾮通⽤功能的功能实现的、所以我们想出来的⽅案是：把⼩程序代码⾥划分重点模块，把每个模块都做成可插拔的，这样我们只需要把差异化很多的部分抽出来完全独⽴交给⾃⼰开发即可。同时这个⽅案实现好后，如果后续我们要开发新形态的应⽤，可以通过实现模块的⽅式实现⼀套新的应⽤形态
+
+这些优化工作总共时间大概花了一个月左右，完成之后，目前我们的产品能够支持到 **20+** 人同时进行音视频，这块实际测试过。对我们的产品稳定性越来越好！

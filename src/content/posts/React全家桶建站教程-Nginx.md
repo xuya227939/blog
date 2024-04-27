@@ -1,6 +1,6 @@
 ---
 title: React全家桶建站教程-Nginx
-pubDate: 2018.06.07
+pubDate: 2018-06-07 13:41:45
 categories: ["React"]
 description: ""
 ---

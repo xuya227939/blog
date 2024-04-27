@@ -1,90 +1,93 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: JS 实现出入栈操作
+pubDate: 2018-07-18 09:22:58
+categories: ["JS"]
 description: ""
 ---
 
-## 介绍
+## 栈
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+栈是一种特殊的列表，栈内的元素只能通过列表的一端访问，这一端称之为栈顶。栈被称为一种后入先出(LIFO，last-in-first-out)的数据结构。盘子就是最好的例子，最后叠入的盘子，总是最先出去。
 
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+## 实现
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+function stack() {
+    this.dataStore = []; //初始化数组
+    this.topa = 0; //栈位
+    this.pop = pop; //出栈
+    this.push = push; //入栈
+    this.clear = clear; //清楚栈
+    this.length = length; //返回栈的长度
+}
+
+function pop() {
+    return this.dataStore[--this.topa];
+}
+
+function push(element) {
+    return this.dataStore[this.topa++] = element;
+}
+
+function length() {
+    return this.topa;
+}
+
+function clear() {
+    this.topa = 0;
+}
+var s = new stack();
+s.push(1);
+s.topa;
 ```
 
-## 使用
+## 利用栈的特点很容易实现回文
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
-
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-2.引用官方代码，修改 App.css
+回文是指，正过来和反过来都是一样，比如`dad，racecar`，比如`dad`，在栈中就是
+`[d] [a] [d]`
+通过循环读取，判断与传入的字符串是否相等，即判断是否是回文。
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
+function isPalindremo(word) {
+    var s = new stack();
+    for (var i = 0, len = word.length; i < len; i++) {
+        s.push(word[i]);
+    }
+    var rword = '';
+    while (s.length() > 0) {
+        rword += s.pop();
+    }
+    if (rword === word) {
+        return true;
+    } else {
+        return false;
+    }
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+isPalindremo('dad');
 ```
 
-你就可以看到蓝色的按钮了。
+## 判断括号是否匹配
 
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。
+```
+function isBrackets(expresseion) {
+    var s = new stack();
+    var b = false;
+    var c = false;
+    for (var i = 0, len = expresseion.length; i < len; i++) {
+        if (expresseion[i] == '(') {
+            b = true;
+        }
+        if (expresseion[i] == ')') {
+            c = true;
+        }
+        s.push(expresseion[i]);
+    }
+    if (!(b && c)) {
+        s.push(')');
+        return s.length();
+    } else {
+        return false;
+    }
+}
+console.log(isBrackets('123 + (a+x+x5+a'));
+```

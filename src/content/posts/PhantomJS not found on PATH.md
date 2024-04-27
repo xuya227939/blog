@@ -1,90 +1,27 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: PhantomJS not found on PATH
+pubDate: 2019-05-06 16:02:32
+categories: ["PhantomJS"]
 description: ""
 ---
 
-## 介绍
-
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
-
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+今天 Win 上进行`npm install`的时候遇到一个问题
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+PhantomJS not found on PATH
+Downloading https://github.com/Medium/phantomjs/releases/download/v2.1.1/phantomjs-2.1.1-windows.zip
+Saving to C:\Users\hezhi\AppData\Local\Temp\phantomjs\phantomjs-2.1.1-windows.zip
+Receiving...
+  [=---------------------------------------] 2%
 ```
 
-## 使用
+这个 phantomjs-2.1.1-windows.zip 包一直下载不了，原来是天朝的网给墙了。
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+[http://phantomjs.org/download.html](http://phantomjs.org/download.html) 通过这个网址进行下载对应的包
 
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
+把包放进此路径下`C:\Users\hezhi\AppData\Local\Temp\phantomjs\`(Win)
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
+解压，然后复制 phantomjs 所在的路径`C:\Users\hezhi\AppData\Local\Temp\phantomjs\phantomjs-2.1.1-windows\phantomjs-2.1.1-windows\bin`
 
-export default App;
-```
-
-2.引用官方代码，修改 App.css
-
-```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-```
-
-你就可以看到蓝色的按钮了。
-
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。
+再设置环境变量，添加刚才复制的路径。
+![image](https://user-images.githubusercontent.com/16217324/57213064-3ad3dd00-7018-11e9-81ad-f873201c364a.png)

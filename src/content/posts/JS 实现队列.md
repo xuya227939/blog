@@ -1,90 +1,108 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: JS 实现队列
+pubDate: 2018-07-19 10:08:43
+categories: ["JS"]
 description: ""
 ---
 
-## 介绍
+## 队列
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+队列是一种列表，与栈相反，特点表现为先入先出(First-in-First-out，FIFO)结构。常见的例子就是银行排队，先到人的先办理业务。
 
-## 例子
+## 实现
 
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+使用数组实现，js 中的数组相对于其他语言，有它自己的优势，比如 push()方法，向数组末尾追加元素并更新数组长度，shift()方法，取出数据第一项元素。所以，利用数组就很容易实现队列。
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+function queue() {
+    this.dataStore = [];
+    this.length = length;
+    this.iqueue = iqueue;
+    this.oqueue = oqueue;
+    this.front = front;
+    this.back = back;
+    this.clear = clear;
+}
+
+function length() {
+    return this.dataStore.length;
+}
+
+function iqueue(element) {
+    return this.dataStore.push(element);
+}
+
+function oqueue() {
+    return this.dataStore.shift();
+}
+
+function front() {
+    return this.dataStore[0];
+}
+
+function back() {
+    return this.dataStore[this.dataStore.length - 1];
+}
+
+function clear() {
+    return this.dataStore = [];
+}
+
+var q = new queue();
+console.log(q.iqueue(1));
+console.log(q.length());
+console.log(q.front());
+console.log(q.oqueue());
+console.log(q.length());
 ```
 
-## 使用
-
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+## 使用队列实现舞蹈员入场问题
 
 ```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
+function dancer(name, sex) {
+    this.name = name;
+    this.sex = sex;
 }
 
-export default App;
+
+function getDancer(males, females) {
+    var datas = [{
+            name: 'a',
+            sex: 1
+        },
+        {
+            name: 'b',
+            sex: 0
+        },
+        {
+            name: 'c',
+            sex: 1
+        },
+        {
+            name: 'd',
+            sex: 0
+        }
+    ]
+    for (var i = 0, len = datas.length; i < len; i++) {
+        if (datas[i].sex === 0) {
+            males.iqueue(new dancer(datas[i].name, datas[i].sex));
+        } else {
+            females.iqueue(new dancer(datas[i].name, datas[i].sex));
+        }
+    }
+}
+
+function dance(males, females) {
+    var person;
+    while (males.length() != 0 && females.length() != 0) {
+        person = males.oqueue();
+        console.log('Males dancer is:' + person.name);
+        person = females.oqueue();
+        console.log('Females dancer is:' + person.name);
+    }
+}
+var males = new queue();
+var females = new queue();
+getDancer(males, females);
+dance(males, females);
 ```
-
-2.引用官方代码，修改 App.css
-
-```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-```
-
-你就可以看到蓝色的按钮了。
-
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。

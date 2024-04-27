@@ -1,90 +1,28 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: ERR_SSL_PROTOCOL_ERROR
+pubDate: 2019-05-12 20:15:52
+categories: ["ERR_SSL"]
 description: ""
 ---
 
-## 介绍
+起因是因为阿里云机器快要到期了，然后重新买了台低配的机器，在上面跑我的服务。根据快照直接进行创建，发现新机器和老机器的数据一摸一样，这功能真舒服，根据自定义镜像创建机器。购买完毕，启动服务。然后就遇到了下面这个问题
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+![image](https://user-images.githubusercontent.com/16217324/57581972-d6ba8880-74f1-11e9-8cf3-c27d0fa62827.png)
 
-## 例子
+- 尝试 Google、百度解决方法，发现没有跟我一样的。
+- 尝试重新申请 SSL 证书和重新配置 Nginx SSL 也是一样。
+- 实在没辙，下午先放着了，晚上再解决。
 
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
+到了晚上，查看了下 9000 端口占用情况，发现正常。
 
-## 安装
+![image](https://user-images.githubusercontent.com/16217324/57582015-5c3e3880-74f2-11e9-87e7-7df938115799.png)
 
-```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
-```
+把 PM2 进程管理给停止，然后重新 npm start，发现可以正常访问了，刺激！
 
-## 使用
+然后怀疑跟 PM2 有关系，一直使用的是`pm2 start all`以为开启了，才发现 all 其实是管理。
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+需要重新`pm2 start ./bin/www --watch` 一下才行。
 
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
+![image](https://user-images.githubusercontent.com/16217324/57582054-bb03b200-74f2-11e9-96c7-555ffdf86e15.png)
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-2.引用官方代码，修改 App.css
-
-```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-```
-
-你就可以看到蓝色的按钮了。
-
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。
+还有可能就是证书无效了，重新配置下证书。

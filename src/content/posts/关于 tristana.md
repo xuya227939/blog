@@ -1,90 +1,62 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: 关于 tristana
+pubDate: 2021-04-19 10:20:19
+categories: ["Tristana"]
 description: ""
 ---
 
-## 介绍
+## 前言
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+大概在 2019 年的时候，为公司搭建了一套项目框架，截止到今天，用起来很不错，最近 `Vite` 太火，折腾了下，花了两天的时间，用 `Vite` 替换了 `Webpack`（`Webpack5`、`Webpack4` 都有，切换分支即可），体验直接起飞，基于 `Vite` + `React` + `Ant Design` + `Mobx` + `ESLint` + `TypeScript` 的项目框架。
 
-## 例子
+## 特点
 
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
+- **快速开始**，只要您了解 `react`、`mobx`、`webpack` 和 `react router`，就可以快速搭建中后台管理平台。
 
-## 安装
+- **路由匹配**，包括 `url` 输入，`js` 跳转，菜单切换。
 
-```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
-```
+- **Loading**，不需要重复写组件 `loading` 判断。
 
-## 使用
+## Demo
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+[tristana](https://order.downfuture.com/)
 
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
+## 项目地址
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
+[tristana](https://github.com/xuya227939/tristana.git)
 
-export default App;
-```
+## 关于命名
 
-2.引用官方代码，修改 App.css
+由于本人非常喜欢玩 LOL 射手小炮，所以叫 tristana
+
+## 能否使用在生产环境？
+
+当然，目前我司多个产品线在使用中。
+
+## 启动
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
+$ git clone https://github.com/xuya227939/tristana.git
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+$ cd tristana
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+$ git checkout vite
 
-.App-title {
-  font-size: 1.5em;
-}
+$ npm install
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+$ npm run dev
 ```
 
-你就可以看到蓝色的按钮了。
+## 打包
 
-## 问题处理
+```
+$ npm run build
+```
 
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
+## 是否支持 IE8?
+
+不支持
 
 ## 结语
 
-react 入门，首先从搭建 react 开始。
+大佬们觉得不错的话，可以给个 Star 🌟，也欢迎给项目提 issues ~

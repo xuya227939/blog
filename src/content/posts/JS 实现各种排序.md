@@ -1,90 +1,60 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: JS 实现各种排序
+pubDate: 2018-07-16 11:23:52
+categories: ["JS"]
 description: ""
 ---
 
-## 介绍
+## 冒泡排序
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
-
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+冒泡排序是一种把数字两两交换的排序，时间复杂度为 O(n2)。
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+function bubbleSort(array) {
+    if (array.length < 1) {
+        return;
+    }
+    var temp;
+    var len = array.length;
+    for (var i = 0; i < len; i++) {
+        for (var j = 0; j < len; j++) {
+            if (array[i] < array[j]) {
+                temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
+    return array;
+}
+console.log(bubbleSort([3, 8, 5, 2, 1, 4]));
 ```
 
-## 使用
+## 快速排序
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
-
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-2.引用官方代码，修改 App.css
+快速排序其实是二分排序和冒泡排序的变种，基本思想就是左边放最小数据，右边放最大数据，分别对左边和右边进行递归。然后再组成最小数据集。时间复杂度为 O(n2)
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
+function quickSort(array) {
+    if (array.length < 1) {
+        return array;
+    }
+    var len = array.length;
+    var ban = Math.floor(len / 2);
+    var num = array[ban];
+    var left = [],
+        right = [],
+        mid = [];
+    for (var i = 0; i < len; i++) {
+        if (array[i] < num) {
+            left.push(array[i]);
+        } else if (array[i] > num) {
+            right.push(array[i]);
+        } else {
+            mid.push(array[i]);
+        }
+    }
+    return [].concat(quickSort(left), mid, quickSort(right));
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+console.log(quickSort([3, 8, 5, 2, 1, 4]));
 ```
-
-你就可以看到蓝色的按钮了。
-
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。

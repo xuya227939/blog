@@ -1,90 +1,91 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: Babel6 如何升级 7
+pubDate: 2019-06-05 13:25:00
+categories: ["Babel"]
 description: ""
 ---
 
-## 介绍
-
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
-
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+## Babel
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+$ npm install babel-upgrade -g
+$ babel-upgrade --write
 ```
 
-## 使用
+然后会发现 package.json 依赖包，自动给转换到了最新版。
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+![image](https://user-images.githubusercontent.com/16217324/58931894-117fab80-8794-11e9-8dee-67a3abb6d498.png)
 
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-2.引用官方代码，修改 App.css
+Babel7 新增了`babel.config.js`，这里我没有用到，所以还是选择使用`.babelrc`文件。
+最终配置如下
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "edge": "17",
+                    "firefox": "60",
+                    "chrome": "67",
+                    "safari": "11.1"
+                },
+                "useBuiltIns": "usage"
+            }
+        ],
+        [
+            "@babel/preset-react",
+        ],
+    ],
+    "plugins": [
+        ["@babel/plugin-proposal-class-properties"],
+        ["@babel/plugin-transform-runtime"],
+        ["@babel/plugin-syntax-import-meta"],
+        ["@babel/plugin-syntax-dynamic-import"],
+        ["@babel/plugin-proposal-json-strings"],
+        [
+            "import", {
+                "libraryName": "antd",
+                "libraryDirectory": "es",
+                "style": "css",
+            }
+        ],
+    ]
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 ```
 
-你就可以看到蓝色的按钮了。
+这里引入了`Ant`，解决`Ant`按需加载
 
-## 问题处理
+```
+[
+    "import", {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": "css",
+    }
+],
+```
 
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
+Webpack 配置如下
 
-## 结语
+```
+module: {
+    rules: [
+        {
+            test: /\.js|jsx$/,
+            exclude: /(node_modules)/,
+            loader: 'babel-loader',
+        },
+    ],
+},
+```
 
-react 入门，首先从搭建 react 开始。
+遇到的坑
+
+![image](https://user-images.githubusercontent.com/16217324/58932163-2741a080-8795-11e9-85ef-984d2db54afb.png)
+
+无法识别`JSX`语法，因为在`.babelrc`文件中没有引入`@babel/preset-react`
+
+完美升级 babel7

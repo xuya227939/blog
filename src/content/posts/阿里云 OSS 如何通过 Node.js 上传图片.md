@@ -1,90 +1,83 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: 阿里云 OSS 如何通过 Node.js 上传图片
+pubDate: 2019-03-29 11:45:46
+categories: ["阿里云"]
 description: ""
 ---
 
-## 介绍
-
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
-
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
-
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+const multiparty = require('multiparty');
+require('../../conf/util.js');
+require('../../conf/oss.js');
+const fs = require('fs');
+const fsE = require('fs-extra');
+
+global.router.put(`${global.api}uploadAvatar`, function (req, res) {
+    let datas = {};
+    const {
+        account,
+        avatar
+    } = req.session;
+    if (!(fs.existsSync(global.location + account))) {
+        fs.mkdir(global.location + account);
+    }
+    const form = new multiparty.Form({
+        uploadDir: global.location + account
+    });
+    form.parse(req, function (err, fields, files) {
+        let filesTmp = files.filedata;
+        filepath = filesTmp[0].path;
+        const img = filesTmp[0].path.split('/')[2];
+        const result = put(filepath, account, img);
+        result.then((value) => {
+            if (value.res.statusCode === 200) {
+                let updateSql = 'UPDATE users SET avatar = ? WHERE account = ?;';
+                let newAvatar = `//img.downfuture.com/${account}/${img}-avatar2`;
+                req.getConnection(function (err, conn) {
+                    conn.query(`${updateSql}`, [newAvatar, account], function (err, result) {
+                        unlinkFile(account);
+                        if (avatar.indexOf('user.png') == -1) {
+                            let bucket = avatar.split('/')[3] + '/' + avatar.split('/')[4];
+                            deleteFile(bucket.split('-')[0]);
+                        }
+                        req.session.avatar = newAvatar;
+                        datas.avatar = newAvatar;
+                        datas.code = 200;
+                        res.json(datas);
+                    });
+                });
+            } else {
+                unlinkFile(account);
+                // fix:错误回参不对，需要给到具体报错参数
+                datas.avatar = '//img.downfuture.com/images/user.png';
+                datas.error = value;
+                datas.code = 500;
+                res.json(datas);
+            }
+        });
+    });
+});
+
+function unlinkFile(account) {
+    fsE.remove(global.location + account);
+}
+
+async function deleteFile(bucket) {
+    try {
+        const result = await ossClient.delete(bucket);
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+async function put(filepath, account, img) {
+    try {
+        let result = await ossClient.put(`${account}/${img}`, filepath);
+        return result;
+    } catch (err) {
+        return err;
+    }
+}
+
+module.exports = global.router;
 ```
-
-## 使用
-
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
-
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-2.引用官方代码，修改 App.css
-
-```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-```
-
-你就可以看到蓝色的按钮了。
-
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。

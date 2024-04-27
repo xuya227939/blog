@@ -1,90 +1,34 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: pm2 The "data" argument must be of type string or an instance of Buffer 问题排查
+pubDate: 2023-10-15 22:54:13
+categories: ["PM2"]
 description: ""
 ---
 
-## 介绍
-
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
-
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+## 问题
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+pm2 The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received type number
 ```
 
-## 使用
+## 解决
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+在本地运行 Node.js 发现并没有这个问题，后面随想可能是 PM2 启动的时候，路径查找不到
 
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
+两个问题要解决：
+1、PM2 版本过低，服务器上的 PM2 版本还是 2
+通过 pm2 update 更新到了 5
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-2.引用官方代码，修改 App.css
+2、每次上传大文件，Node.js 进程一定会挂
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+module.exports = {
+ apps: [
+     {
+         watch: false,
+     }
+ ]
+};
 ```
 
-你就可以看到蓝色的按钮了。
-
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。
+watch 设置为 false，即可解决

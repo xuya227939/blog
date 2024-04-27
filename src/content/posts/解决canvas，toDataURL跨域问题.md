@@ -1,90 +1,71 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: 解决canvas，toDataURL跨域问题
+pubDate: 2020-04-05 23:03:45
+categories: ["Canvas"]
 description: ""
 ---
 
-## 介绍
+## 图片服务器需要配置 Access-Control-Allow-Origin
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
-
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+设置通配符，允许任何域名访问
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+header("Access-Control-Allow-Origin: *");
 ```
 
-## 使用
-
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+指定域名
 
 ```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
+header("Access-Control-Allow-Origin: www.xxx.com");
 ```
 
-2.引用官方代码，修改 App.css
+此时，Chrome 浏览器不会有 Access-Control-Allow-Origin 相关的错误信息，但是，还会有其他的跨域错误信息。
+
+## HTML crossOrigin 属性解决资源跨域问题
+
+在 HTML5 中，有些元素提供了`CORS(Cross-Origin Resource Sharing)`属性，这些元素包括<img>，<video>，<script>等，而提供的属性名就是 crossOrigin 属性。
+
+因此，上面的跨域问题可以这么处理：
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+const canvas = document.createElement('canvas');
+const ctx = canvas.getContext('2d');
+const img = new Image();
+img.crossOrigin = 'anonymous';
+img.onload = () => {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img, 0, 0, img.width, img.height);
+    resolve(canvas.toDataURL());
+};
+img.src = url;
 ```
 
-你就可以看到蓝色的按钮了。
+其中，只要`crossOrigin`的属性值不是`use-credentials`，全部都会解析为 anonymous，包括空字符串。
 
-## 问题处理
+## url 加时间戳，清空缓存
 
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
+如果上面还是没有解决跨域问题，那么要考虑图片是否被浏览器缓存住了。
 
-## 结语
+没有加时间戳的请求
 
-react 入门，首先从搭建 react 开始。
+![image](https://user-images.githubusercontent.com/16217324/78502895-06235500-7796-11ea-85a7-a21076268933.png)
+
+加上时间戳的请求
+![94630f5b463e7c0db0c2b04d978b6a7](https://user-images.githubusercontent.com/16217324/78502902-150a0780-7796-11ea-9f2c-625bf6da8051.png)
+
+因此，代码可以这么写
+
+```
+const canvas = document.createElement('canvas');
+const ctx = canvas.getContext('2d');
+const img = new Image();
+img.crossOrigin = 'Anonymous';
+img.onload = () => {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img, 0, 0, img.width, img.height);
+    resolve(canvas.toDataURL());
+};
+img.src = url + '?time=' + new Date().valueOf();
+```

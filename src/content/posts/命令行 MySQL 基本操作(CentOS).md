@@ -1,90 +1,92 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: 命令行 MySQL 基本操作(CentOS)
+pubDate: 2020-07-24 10:54:53
+categories: ["MySQL", "CentOS"]
 description: ""
 ---
-
-## 介绍
-
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
-
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
 
 ## 安装
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
+$ brew install mysql
 ```
 
-## 使用
-
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+## 登录
 
 ```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
+$ mysql -uroot -p
 ```
 
-2.引用官方代码，修改 App.css
+连接到 mysql 数据库，默认没有密码的，直接按回车进入。
+
+## 启动数据库
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+$ service mysqld start
 ```
 
-你就可以看到蓝色的按钮了。
+## 停止数据库
 
-## 问题处理
+```
+$ service mysqld stop
+```
 
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
+## 重启数据库
 
-## 结语
+```
+$ service mysqld restart 
+```
 
-react 入门，首先从搭建 react 开始。
+## 显示所有数据库
+
+```
+$ show databases;
+```
+
+![image](https://user-images.githubusercontent.com/16217324/88373512-8e237e00-cdca-11ea-9f5f-a97a5cd0aef4.png)
+
+## 进入数据库
+
+```
+$ use mysql;
+```
+
+## 显示所有表
+
+```
+$ show tables;
+```
+
+![image](https://user-images.githubusercontent.com/16217324/88373543-9b406d00-cdca-11ea-83ab-dc217892ffd7.png)
+
+## 创建表名和字段
+
+```
+$ CREATE TABLE data (images VARCHAR(20));
+```
+
+## 修改字段大小
+
+```
+$ ALTER TABLE data images MODIFY VARCHAR(100);
+```
+
+## 查询表
+
+```
+$ select * from card;
+```
+
+## 修改用户密码
+
+```
+$ mysql -u root -p
+
+$ show databases;
+
+$ use mysql;
+
+$ desc user;  # 用户表存放用户和面膜
+
+$ update user set authentication_string=PASSWORD('123') where user = 'root';
+```

@@ -1,90 +1,26 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
+title: 使用 Sourcetree 提示需要输入密码
+pubDate: 2019-06-10 11:30:47
 categories: ["React"]
 description: ""
 ---
 
-## 介绍
+![image](https://user-images.githubusercontent.com/16217324/59170575-e3261580-8b71-11e9-8610-0c9679a1ef54.png)
+使用公司`GitLab`提交的时候，每次都需要输入密码
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+## 解决方案(mac)
 
-## 例子
+### 命令行解决
 
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
+输入以下命令
+`git config --global credential.helper osxkeychain`
+执行完成后，再次在 SourceTree 里面输入一下 GitLab 里面的密码。注意勾选选项“store password in keychain”。
+这个时候，会跳出钥匙串的对话框，这个时候要输入的密码，是 mac 的开机密码。并且一定要勾选始终允许。否则，还是要一直跳出现在的这个登陆窗口了
 
-## 安装
+![image](https://user-images.githubusercontent.com/16217324/59170661-41eb8f00-8b72-11e9-89bf-d9db9f437f9b.png)
 
-```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
-```
+### 还有一种就是 Keychain 中产生了冲突，使勾选失效
 
-## 使用
+将已失效的 git.a. Access Key for git 删除，再次操作输入密码后新的密码就会存储在 Keychain，以后就不用每次远程操作都手动输入密码了
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
-
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-2.引用官方代码，修改 App.css
-
-```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-```
-
-你就可以看到蓝色的按钮了。
-
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。
+![image](https://user-images.githubusercontent.com/16217324/59170836-f2f22980-8b72-11e9-9765-0cfbf1631e3b.png)

@@ -1,90 +1,42 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: 基于MobX 封装 Action 接口 Loading
+pubDate: 2019-11-19 17:37:42
+categories: ["Mobx"]
 description: ""
 ---
 
-## 介绍
-
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
-
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
+# 代码如下
 
 ```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
-```
+import { action, observable } from 'mobx';
 
-## 使用
+export default class BasicStore {
+    @observable isLoading  = observable.map({ });
 
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
-
-```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
+    @action
+    changeLoadingStatus (loadingType, type) {
+        this.isLoading.set(loadingType, type);
+    }
 }
 
-export default App;
-```
+// 初始化loading
+export function initLoading(target, key, descriptor) {
+    const oldValue = descriptor.value;
 
-2.引用官方代码，修改 App.css
+    descriptor.value = async function(...args) {
+        this.changeLoadingStatus(key, true);
+        let res;
+        try {
+            res = await oldValue.apply(this, args);
+        } catch (error) {
+            // 做一些错误上报之类的处理
+            throw error;
+        } finally {
+            this.changeLoadingStatus(key, false);
+        }
+        return res;
+    };
 
-```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    return descriptor;
 }
 ```
-
-你就可以看到蓝色的按钮了。
-
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。

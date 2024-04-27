@@ -1,90 +1,38 @@
 ---
-title: React全家桶建站教程-React&Ant
-pubDate: 2018.06.08
-categories: ["React"]
+title: 前端如何支持PDF、Excel、Word在线预览
+pubDate: 2018-12-27 15:54:14
+categories: ["前端", "Excel", "Word"]
 description: ""
 ---
 
-## 介绍
+## 注意一下几点：
 
-这里使用到的 UI 库是蚂蚁金服开源的 ant-design，为啥使用？我觉得是使用人数比较多，坑比较少吧。
+- url 必须经过 encodeURIComponent 转移，且是能够打开的文件域名。
+- 谷歌文件在线预览，必须使用代理，各种文件都支持。
+- 不想用代理，可以用微软这个，但是微软这个，不支持最新的 xlsx 格式，xls 格式可以。
+- 谷歌格式：https://docs.google.com/viewer?url=[url]
+- 微软格式：https://view.officeapps.live.com/op/view.aspx?src=[url]
 
-## 例子
-
-https://github.com/xuya227939/blog/tree/master/examples/react/my-app
-
-## 安装
-
-```
-$ sudo npm install -g create-react-app //全局安装的话，需要权限，所以使用sudo
-$ create-react-app my-app
-$ cd my-app
-$ npm install antd
-$ npm start
-```
-
-## 使用
-
-1.引用官方代码，修改 App.js 文件，引入 ant 组件
+## 例子(Word)
 
 ```
-import React, { Component } from 'react';
-import Button from 'antd/lib/button';
-import './App.css';
+谷歌：
+https://docs.google.com/viewer?url=http%3A%2F%2Fsruserfiletest.oss-cn-hangzhou.aliyuncs.com%2Fcrm%2Fcc604886ae8d4be9afffab02313d646d.docx%3FExpires%3D1545898717%26OSSAccessKeyId%3DLTAIm573A7RmsqeQ%26Signature%3DVOaSsvyYy9f%252BF6R1GcSnCG%252BaVI4%253D
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-    );
-  }
-}
-
-export default App;
+微软：
+https://view.officeapps.live.com/op/view.aspx?src=http%3A%2F%2Fsruserfiletest.oss-cn-hangzhou.aliyuncs.com%2Fcrm%2Fcc604886ae8d4be9afffab02313d646d.docx%3FExpires%3D1545898717%26OSSAccessKeyId%3DLTAIm573A7RmsqeQ%26Signature%3DVOaSsvyYy9f%252BF6R1GcSnCG%252BaVI4%253D
 ```
 
-2.引用官方代码，修改 App.css
+## 例子(Excel)
 
 ```
-@import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
+谷歌：
+https://docs.google.com/viewer?url=http%3A%2F%2Fsruserfiletest.oss-cn-hangzhou.aliyuncs.com%2Fcrm%2F981f08e66ffa4f64934b37e543f5700b.xlsx%3FExpires%3D1545898717%26OSSAccessKeyId%3DLTAIm573A7RmsqeQ%26Signature%3DFgItdsB%252BPrm2%252BOQShja1HkfqKyY%253D
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+微软：
+https://view.officeapps.live.com/op/view.aspx?src=http%3A%2F%2Fsruserfiletest.oss-cn-hangzhou.aliyuncs.com%2Fcrm%2F981f08e66ffa4f64934b37e543f5700b.xlsx%3FExpires%3D1545898717%26OSSAccessKeyId%3DLTAIm573A7RmsqeQ%26Signature%3DFgItdsB%252BPrm2%252BOQShja1HkfqKyY%253D
 ```
 
-你就可以看到蓝色的按钮了。
+## PDF
 
-## 问题处理
-
-1.如果报类似这样的错，react-scripts command not found 那么就 $ rm -rf node_modules 模块，重新安装下 $ npm i，再重新 npm start
-
-## 结语
-
-react 入门，首先从搭建 react 开始。
+window.open([url])
