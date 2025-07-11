@@ -7,12 +7,12 @@ import {
 import transformerDirectives from "@unocss/transformer-directives";
 import { THEME_CONFIG } from "./src/theme.config";
 
-const {socials, themeStyle} = THEME_CONFIG;
+const { socials, themeStyle } = THEME_CONFIG;
 
 let foreground = "#2e405b";
 let background = "#ffffff";
 
-if(THEME_CONFIG.themeStyle === 'dark') {
+if (THEME_CONFIG.themeStyle === "dark") {
   foreground = "#ffffff";
   background = "#2e405b";
 }
@@ -20,7 +20,7 @@ if(THEME_CONFIG.themeStyle === 'dark') {
 export default defineConfig({
   presets: [
     presetUno({
-      dark: themeStyle === 'auto' ? 'media' : 'class',
+      dark: themeStyle === "auto" ? "media" : "class",
     }),
     presetAttributify({ nonValuedAttribute: true }),
     presetIcons({
@@ -31,11 +31,12 @@ export default defineConfig({
   theme: {
     colors: {
       foreground,
-      background
+      background,
     },
     fontFamily: {
       sans: '"Source Sans Pro","Roboto","Helvetica","Helvetica Neue","Source Han Sans SC","Source Han Sans TC","PingFang SC","PingFang HK","PingFang TC",sans-serif',
-      serif: '"HiraMinProN-W6","Source Han Serif CN","Source Han Serif SC","Source Han Serif TC",serif',
+      serif:
+        '"HiraMinProN-W6","Source Han Serif CN","Source Han Serif SC","Source Han Serif TC",serif',
     },
     animation: {
       keyframes: {
@@ -47,13 +48,9 @@ export default defineConfig({
     },
   },
   shortcuts: [
-    ['icon', 'inline-block '],
-    ['post-title', 'text-5 font-bold lh-7.5 m-0'],
+    ["icon", "inline-block "],
+    ["post-title", "text-5 font-bold lh-7.5 m-0"],
   ],
-  transformers: [
-    transformerDirectives(),
-  ],
-  safelist: [
-    ...socials.map((social) => `i-mdi-${social.name}`),
-  ],
-})
+  transformers: [transformerDirectives()],
+  safelist: [...socials.map((social) => `i-mdi-${social.name}`)],
+});
